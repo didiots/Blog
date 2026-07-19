@@ -1,0 +1,36 @@
+/* ==== header ==== */
+header {
+    background-color: rgba(78, 164, 135, 1);
+}
+
+.navigator-bar {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 120px;
+    padding: 0 40px;
+}
+
+.blog-logo {
+    height: 72px;
+    width: 72px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-family: 'Arima', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgba(248, 245, 235, 1);
+}
+
+/* ==== main section ==== */
+
+/* ==== footer ==== */
