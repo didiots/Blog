@@ -5,7 +5,7 @@
     padding-top: 80px;
 }
 
-.section-01-left h3 {
+.headline h3 {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
@@ -14,7 +14,7 @@
     color: rgba(78, 164, 135, 1);
 }
 
-.section-01-left h1 {
+.headline h1 {
     font-family: 'Arima';
     font-style: normal;
     font-weight: 700;
