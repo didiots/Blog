@@ -34,3 +34,8 @@
 
     color: rgba(84, 55, 13, 1);
 }
+
+.article-meta{
+    display: flex;
+}
+
