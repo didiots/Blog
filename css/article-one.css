@@ -1,0 +1,26 @@
+.headline h3 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+
+    color: rgba(78, 164, 135, 1);
+}
+
+.headline h1 {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+
+    color: rgba(241, 201, 83, 1);
+}
+
+.headline p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+
+    color: rgba(84, 55, 13, 1);
+}
