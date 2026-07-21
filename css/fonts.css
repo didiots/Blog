@@ -5,3 +5,11 @@
     font-weight: 400;
     src: url('../assets/fonts/Arima/Arima-VariableFont_wght.ttf') format('truetype');
 }
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+}
