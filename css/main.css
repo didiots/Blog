@@ -41,7 +41,9 @@ header {
 
 /* ==== main section ==== */
 
-
+main{
+  min-height: 100vh;
+}
 
 /* ==== footer ==== */
 footer {
