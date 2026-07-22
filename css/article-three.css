@@ -6,9 +6,13 @@ main {
 
 .section-01 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding-top: 80px;
-    gap: 50px;
+}
+
+.headline-extraInfo-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .headline-extraInfo {
@@ -60,7 +64,6 @@ main {
     width: 18px;
     height: auto;
 }
-
 
 .headline-author-info-right {
     background-color: #e2f0e8;
