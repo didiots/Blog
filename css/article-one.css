@@ -141,3 +141,9 @@ h4 {
     transform-origin: 50% 50%;
     transition: all 250ms ease-in-out;
 }
+
+.carousel-card:hover {
+    z-index: 2;
+
+    transform: perspective(250px) rotateY(0deg) translate(0px) scaleX(1.5) scaleY(1.2);
+}
