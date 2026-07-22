@@ -11,7 +11,7 @@ main {
     padding-top: 80px;
 
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
 }
 
 .section-01-left-headline h3 {
@@ -43,10 +43,13 @@ main {
 
 .article-meta {
     display: flex;
+    gap: 32px
 }
 
 .meta-item {
     display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .meta-item img {
