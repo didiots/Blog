@@ -5,12 +5,7 @@
     padding-top: 80px;
 
     display: flex;
-    gap: 16px;
-}
-
-.section-01-left {
-    width: 902px;
-    height: 391px;
+    justify-content: space-between;
 }
 
 .section-01-left-headline h3 {
@@ -44,23 +39,18 @@
     display: flex;
 }
 
-.meta-item{
+.meta-item {
     display: flex;
 }
 
-.meta-item img{
-height: 18px;
-width: 16px;
+.meta-item img {
+    height: 18px;
+    width: 16px;
 }
 
-.meta-item p{
+.meta-item p {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-}
-
-.section-01-right {
-        width: 272px;
-    height: 389px;
 }
