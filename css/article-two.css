@@ -120,8 +120,16 @@ main {
 .hero-author-name > p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  color: #4a3b25;
+  color: #5c482c;
+  margin: 4px 0 0 0;
+}
+
+.hero-author-name > h3 {
+  font-family: "Arima", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #43331b;
+  line-height: 0.3;
 }
 
 .hero-infobox > p {
