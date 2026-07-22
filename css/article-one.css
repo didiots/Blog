@@ -2,6 +2,9 @@ main {
     max-width: 1440px;
     margin: 0 auto;
     padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
 }
 
 .section-01 {
