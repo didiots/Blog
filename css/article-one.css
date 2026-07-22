@@ -52,10 +52,7 @@ main {
     gap: 8px;
 }
 
-.meta-item img {
-    height: 18px;
-    width: 16px;
-}
+
 
 .meta-item p {
     font-family: "Open Sans";
