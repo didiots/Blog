@@ -126,3 +126,9 @@ h4 {
 }
 
 /* === section-02 === */
+
+.carousel {
+    height: 440px;
+
+    display: flex;
+}
