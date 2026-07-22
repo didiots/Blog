@@ -85,6 +85,7 @@ main {
 .author-info h3,
 h4 {
     text-align: center;
+    color: rgba(84, 55, 13, 1);
 }
 
 .author-info h3 {
@@ -95,8 +96,17 @@ h4 {
 }
 
 .author-info h4 {
-       font-family: "Arima";
+    font-family: "Arima";
     font-style: normal;
     font-weight: 400;
-    font-size: 18px; 
+    font-size: 18px;
+}
+
+.author-info p{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: rgba(84, 55, 13, 1);
 }
