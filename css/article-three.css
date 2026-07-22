@@ -206,3 +206,81 @@ main {
     height: auto;
     border-radius: 53px;
 }
+
+/* == Section 4 == */
+
+.section-04 {
+    margin: 80px 0;
+}
+
+.share-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.share-box>h3 {
+    font-family: 'Arima', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(84, 55, 13, 1);
+    text-align: center;
+}
+
+.button-wrapper {
+    position: relative;
+    /* Dient als Ankerpunkt für den Pfeil */
+    display: inline-block;
+}
+
+.arrow-icon {
+    position: absolute;
+    width: 218px;
+    height: 100px;
+
+    /* Positioniere den Yellow Pfeil */
+    right: 100%;
+    /* Schiebt den Pfeil komplett links außerhalb des Buttons */
+    top: -62px;
+    /* Schiebt ihn etwas nach oben (Feinjustierung nach Figma) */
+}
+
+.share-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(78, 164, 135, 1);
+    width: 158px;
+    height: 48px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.share-btn:hover { /* generieren lassen */
+    transform: translateY(-3px) scale(1.03); 
+    background-color: rgba(65, 145, 118, 1); 
+    box-shadow: 0 8px 20px rgba(78, 164, 135, 0.4); 
+}
+
+/* Optional: Klick-Feedback (beim Draufdrücken) */
+.share-btn:active {
+    transform: translateY(-1px) scale(0.98);
+    box-shadow: 0 4px 10px rgba(78, 164, 135, 0.3);
+}
+
+.share-btn>img {
+    width: 24px;
+    height: auto;
+}
+
+.share-btn>span {
+    color: rgba(241, 201, 83, 1);
+    font-family: 'Arima', serif;
+    font-size: 24px;
+    font-weight: 700;
+}
