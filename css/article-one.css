@@ -133,6 +133,14 @@ h4 {
     display: flex;
 }
 
+.carousel-card img {
+    width: 300px;
+    height: 440px;
+
+    border-radius: 24px;
+    
+}
+
 .carousel-card {
     width: 100px;
     height: 80%;
