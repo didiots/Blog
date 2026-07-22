@@ -7,6 +7,8 @@ main {
     gap: 88px;
 }
 
+/* === section-01 === */
+
 .section-01 {
     max-width: 1440px;
     min-height: 120px;
@@ -122,3 +124,5 @@ h4 {
 
     text-align: center;
 }
+
+/* === section-02 === */
