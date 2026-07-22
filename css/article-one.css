@@ -5,7 +5,7 @@
     padding-top: 80px;
 
     display: flex;
-    gap:16px;
+    gap: 16px;
 }
 
 .section-01-left-headline h3 {
@@ -35,7 +35,22 @@
     color: rgba(84, 55, 13, 1);
 }
 
-.article-meta{
+.article-meta {
     display: flex;
 }
 
+.meta-item{
+    display: flex;
+}
+
+.meta-item img{
+height: 18px;
+width: 16px;
+}
+
+.meta-item p{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
