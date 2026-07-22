@@ -87,7 +87,7 @@ main {
     margin-bottom: 20px;
 }
 
-.headline-author-name >h3 {
+.headline-author-name>h3 {
     font-family: 'Arima', serif;
     font-size: 22px;
     font-weight: 700;
@@ -95,7 +95,7 @@ main {
     line-height: 0.3;
 }
 
-.headline-author-name >p {
+.headline-author-name>p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #5c482c;
@@ -116,4 +116,43 @@ main {
     color: rgba(84, 55, 13, 1);
     padding-top: 48px;
     text-align: justify;
+    margin-bottom: 80px;
 }
+
+/* == Section 2 == */
+
+.section-02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rain-graph-box {
+    margin-bottom: 88px;
+}
+
+.rain-graph-box>h2 {
+    font-family: 'Arima';
+    font-weight: 500;
+    font-size: 32px;
+    color: rgba(84, 55, 13, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.rain-graph-box>img {
+    width: 640px;
+    height: 436px;
+    padding-top: 8px;
+    border-radius: 53px;
+}
+
+.rain-graph-text>p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(84, 55, 13, 1);
+    margin-bottom: 80px;
+}
+
+/* == Section 3 == */
