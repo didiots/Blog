@@ -44,11 +44,23 @@ main {
 
 .headline-info-box-meta {
     display: flex;
-    gap: 6px;
+    gap: 32px;
     padding-top: 32px;
     font-family: 'Open Sans', sans-serif;
     color: rgba(84, 55, 13, 1);
 }
+
+.headline-icon-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.headline-icons {
+    width: 18px;
+    height: auto;
+}
+
 
 .headline-author-info-right {
     background-color: #e2f0e8;
