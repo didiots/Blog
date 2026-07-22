@@ -113,6 +113,13 @@ main {
   margin-bottom: 20px;
 }
 
+.hero-right-author > p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4a3b25;
+}
+
 .hero-author-name {
   margin-bottom: 20px;
 }
