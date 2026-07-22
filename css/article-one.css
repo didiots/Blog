@@ -5,7 +5,7 @@
     padding-top: 80px;
 
     display: flex;
-    justify-content: space-between;
+   justify-content: space-between;
 }
 
 .section-01-left-headline h3 {
@@ -53,4 +53,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+}
+
+.section-01-right {
+    max-width: 320px;
 }
