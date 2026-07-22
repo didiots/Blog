@@ -8,6 +8,11 @@
     gap: 16px;
 }
 
+.section-01-left {
+    width: 902px;
+    height: 391px;
+}
+
 .section-01-left-headline h3 {
     font-family: "Open Sans";
     font-style: normal;
@@ -53,4 +58,9 @@ width: 16px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+}
+
+.section-01-right {
+        width: 272px;
+    height: 389px;
 }
