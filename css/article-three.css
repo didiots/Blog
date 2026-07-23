@@ -22,18 +22,20 @@ main {
 }
 
 .headline-info-box-left {
-    width: 902px;
+    max-width: 902px;
+    display: flex;
+    flex-direction: column;
 }
 
 .headline-info-box-left>h1 {
     font-family: 'Arima';
     font-size: 64px;
     font-weight: 600;
-    color: rgba(241, 201, 83, 1);
+    color: rgb(241, 202, 85);
 }
 
-.headline-info-box-left>h2 {
-    font-family: 'Open Sans', sans-serif;
+.headline-info-box-left>p.sub-headline {
+    order: -1; /* Schiebt die Sub-Headline nach ganz oben */
     font-size: 40px;
     font-weight: 500;
     color: rgba(78, 164, 135, 1);
@@ -95,7 +97,7 @@ main {
     font-size: 22px;
     font-weight: 700;
     color: #43331b;
-    line-height: 0.3;
+    line-height: 0.5;
 }
 
 .headline-author-name>p {
@@ -143,8 +145,9 @@ main {
 }
 
 .rain-graph-box>img {
-    width: 640px;
-    height: 436px;
+    max-width: 640px;
+    width: 100%;
+    height: auto;
     padding-top: 8px;
     border-radius: 53px;
 }
@@ -261,10 +264,11 @@ main {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.share-btn:hover { /* generieren lassen */
-    transform: translateY(-3px) scale(1.03); 
-    background-color: rgba(65, 145, 118, 1); 
-    box-shadow: 0 8px 20px rgba(78, 164, 135, 0.4); 
+.share-btn:hover {
+    /* generieren lassen */
+    transform: translateY(-3px) scale(1.03);
+    background-color: rgba(65, 145, 118, 1);
+    box-shadow: 0 8px 20px rgba(78, 164, 135, 0.4);
 }
 
 /* Optional: Klick-Feedback (beim Draufdrücken) */
