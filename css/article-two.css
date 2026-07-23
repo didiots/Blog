@@ -48,6 +48,8 @@ main {
   padding: 20px 40px;
 }
 
+/*==1==*/
+
 .landing-section {
   display: flex;
   justify-content: space-between;
@@ -147,6 +149,27 @@ main {
   padding-top: 48px;
   text-align: justify;
 }
+
+/*==2==*/
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-container{
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
+
+.video-container > img {
+  width: 930px;
+  height: 520px;
+
+  border-radius: 53px;
+}
+
 
 /* ==== footer ==== */
 footer {
