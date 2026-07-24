@@ -107,7 +107,22 @@
   .rain-graph-box>h2 {
     font-weight: 600;
     font-size: 20px;
-}
+  }
+
+  .rain-graph-box>img {
+    width: 345px;
+    height: auto;
+    padding-top: 24px;
+    border-radius: 30px;
+  }
+
+  .rain-graph-text>p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+
+  /* == Section 3 == */
 
   /* == Footer == */
   footer {
