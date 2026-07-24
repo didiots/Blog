@@ -96,6 +96,18 @@
 
   /* == Section 2 == */
 
+  .section-02 {
+    gap: 24px;
+  }
+
+  .rain-graph-box {
+    margin-bottom: 0;
+  }
+
+  .rain-graph-box>h2 {
+    font-weight: 600;
+    font-size: 20px;
+}
 
   /* == Footer == */
   footer {
