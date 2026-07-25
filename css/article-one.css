@@ -29,7 +29,7 @@ main {
     gap: 40px;
 }
 
-.section-01-left-headline h3 {
+.section-01-left-headline>p.sub-headline{
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
