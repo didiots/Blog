@@ -191,6 +191,8 @@ li {
 }
 
 .list {
+    max-width: 1440px;
+    min-height: 120px;
     width: 1000px;
     margin: 0 auto;
 }
@@ -202,6 +204,8 @@ ol {
 /* === section-03 === */
 
 .section-03 {
+    max-width: 1440px;
+    min-height: 120px;
     width: 1130px;
     height: 260px;
     margin: 0 auto;
@@ -209,7 +213,7 @@ ol {
 
 .pro-tipps {
     width: 196px;
-    
+
     border-radius: 10px;
     position: relative;
     right: 48px;
@@ -218,7 +222,7 @@ ol {
     display: flex;
     gap: 12px;
 
-    background-color: rgba(78, 164, 135, 1);  
+    background-color: rgba(78, 164, 135, 1);
 }
 
 .pro-tipps img {
