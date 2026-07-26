@@ -29,7 +29,7 @@ main {
     gap: 40px;
 }
 
-.section-01-left-headline>p.sub-headline{
+.section-01-left-headline>p.sub-headline {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
@@ -124,6 +124,11 @@ h4 {
 /* === section-02 === */
 
 .section-02 {
+    max-width: 1440px;
+    min-height: 120px;
+    
+    padding-top: 80px;
+
     display: flex;
     flex-direction: column;
 
@@ -149,7 +154,7 @@ h4 {
 
 .carousel-card img {
     width: 300px;
-    height: 440px;    
+    height: 440px;
 }
 
 .carousel-card {
@@ -167,7 +172,7 @@ h4 {
     transform: perspective(250px) rotateY(0deg) translate(0px) scaleX(1.2) scaleY(1.2);
 }
 
-.carousel-card:hover~ .carousel-card {
+.carousel-card:hover~.carousel-card {
     transform: perspective(250px) rotateY(-10deg) translate(20px);
 }
 
