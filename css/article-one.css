@@ -131,7 +131,7 @@ h4 {
 
 /* === section-02 === */
 
-.carousel-wrapper {
+.section-02 {
     display: flex;
     flex-direction: column;
     align-items: center;
