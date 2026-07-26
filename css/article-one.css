@@ -197,3 +197,11 @@ p, li {
 ol {
     padding-left: 40px;
 }
+
+/* === section-03 === */
+
+.section-03{
+    width: 1130px;
+    height: 260px;
+    margin: 0 auto;
+}
