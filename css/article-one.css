@@ -207,6 +207,26 @@ ol {
     margin: 0 auto;
 }
 
+.pro-tipps {
+    width: 195px;
+    
+
+    border-radius: 10px;
+
+    display: flex;
+
+    background-color: rgba(78, 164, 135, 1);
+}
+
+.pro-tipps p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+
+    color: rgba(241, 201, 83, 1);
+}
+
 .text {
     border-radius: 30px;
 
