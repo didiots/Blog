@@ -189,6 +189,11 @@ p, li {
     color: rgba(61, 61, 61, 1);
 }
 
+.list{
+    width: 1000px;
+    margin: 0 auto;
+}
+
 ol {
     padding-left: 40px;
 }
