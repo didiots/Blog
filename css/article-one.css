@@ -126,7 +126,7 @@ h4 {
 .section-02 {
     max-width: 1440px;
     min-height: 120px;
-    
+
     padding-top: 80px;
 
     display: flex;
@@ -178,4 +178,17 @@ h4 {
 
 .carousel-card:has(~ .carousel-card:hover) {
     transform: perspective(250px) rotateY(10deg) translate(-40px);
+}
+
+p, li {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+
+    color: rgba(61, 61, 61, 1);
+}
+
+ol {
+    padding-left: 40px;
 }
