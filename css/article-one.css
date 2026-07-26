@@ -180,7 +180,8 @@ h4 {
     transform: perspective(250px) rotateY(10deg) translate(-40px);
 }
 
-p, li {
+p,
+li {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
@@ -189,7 +190,7 @@ p, li {
     color: rgba(61, 61, 61, 1);
 }
 
-.list{
+.list {
     width: 1000px;
     margin: 0 auto;
 }
@@ -200,8 +201,16 @@ ol {
 
 /* === section-03 === */
 
-.section-03{
+.section-03 {
     width: 1130px;
     height: 260px;
     margin: 0 auto;
+}
+
+.text {
+    border-radius: 30px;
+
+    padding: 26px 16px 24px 16px;
+
+    background-color: rgba(78, 164, 135, 0.2);
 }
