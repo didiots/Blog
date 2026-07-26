@@ -149,8 +149,7 @@ h4 {
 
 .carousel-card img {
     width: 300px;
-    height: 440px;
-    
+    height: 440px;    
 }
 
 .carousel-card {
@@ -168,6 +167,10 @@ h4 {
     transform: perspective(250px) rotateY(0deg) translate(0px) scaleX(1.2) scaleY(1.2);
 }
 
-.carousel-card:hover~.carousel-card {
+.carousel-card:hover~ .carousel-card {
     transform: perspective(250px) rotateY(-10deg) translate(20px);
+}
+
+.carousel-card:has(~ .carousel-card:hover) {
+    transform: perspective(250px) rotateY(10deg) translate(-40px);
 }
