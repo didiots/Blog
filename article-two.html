@@ -38,8 +38,9 @@
       <section class="landing-section">
         <div class="hero-section-01">
           <div class="hero-left">
-            <h2>A Stylish Scandinavian Escape</h2>
             <h1>Copenhagen in 3 Days: Big<br />Experiences, Smart Spending</h1>
+            <p class="sub-headline">A Stylish Scandinavian Escape</p>
+            
             <p>
               Discover Copenhagen, where historic charm meets modern design,
               vibrant<br />
@@ -106,18 +107,27 @@
       </section>
 
 <section class="video-section">
+  <div class="video-wrapper">
+    <div class="video-trigger" id="videoTrigger">
+      <img
+        class="video-poster"
+        src="./assets/img/img-copenhagen.jpg"
+        alt="Bild von Kopenhagen"
+      />
+      <button class="play-button" type="button" aria-label="Video abspielen">
+        <span class="play-icon"></span>
+      </button>
+    </div>
 
- <div class="video-container">
-
-  <img src="./assets/img/img-copenhagen.jpg" alt="Picture Copenhagen">
-
-  <div class="play-button">
-    
+    <iframe
+      class="video-player"
+      id="videoPlayer"
+      title="YouTube Video"
+      src=""
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
   </div>
-
-</div>
-
-
 </section>
 
     </main>
@@ -169,5 +179,19 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const videoTrigger = document.getElementById("videoTrigger");
+      const videoPlayer = document.getElementById("videoPlayer");
+      const youtubeVideoId = "aslDoa-PYWM";
+
+      if (videoTrigger && videoPlayer) {
+        videoTrigger.addEventListener("click", () => {
+          videoTrigger.classList.add("is-hidden");
+          videoPlayer.classList.add("is-visible");
+          videoPlayer.src = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0`;
+        });
+      }
+    </script>
   </body>
 </html>
