@@ -204,23 +204,17 @@ main {
   cursor: pointer;
 }
 
-.play-button::before {
-  content: "";
-  width: 92px;
-  height: 92px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+.play-button {
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 
 .play-icon {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 14px solid transparent;
-  border-bottom: 14px solid transparent;
-  border-left: 24px solid #4ea487;
-  margin-left: 6px;
+  width: 92px;
+  height: 92px;
+  display: block;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
 }
 
 .video-player {
