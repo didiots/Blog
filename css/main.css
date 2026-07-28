@@ -43,6 +43,84 @@ main {
     min-height: 100vh;
 }
 
+/* ==== hero section ==== */
+
+.hero-content-wrapper {
+    position: relative;
+    max-width: 1440px;
+    height: 547px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.hero-content-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 647px;
+    height: 100%;
+
+    background-image: url("../assets/img/img-hero-yellow-hector.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+} 
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 515px;
+
+    background-image: url("../assets/img/img-hero.jpg");
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    max-width: 345px;
+    height: 227px;
+
+    margin-left: 104px;
+    margin-top: 122px;
+}
+
+.hero-content>h1 {
+    font-family: 'Arima', serif;
+    font-size: clamp(36px, 4vw, 60px);
+    font-weight: 700;
+}
+
+.hero-content>p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(16px, 2vw, 28px);
+    font-weight: 300;
+}
+
+.hero-badge {
+    position: absolute;
+    z-index: 4;
+
+    top: 284px;
+    left: 444px;
+    
+    width: 11vw;
+    max-width: 160px;
+    height: auto;
+}
+
+/* ==== content wrapper ==== */
+
 /* ==== footer ==== */
 footer {
     background-color: rgba(78, 164, 135, 1);
