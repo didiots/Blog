@@ -187,7 +187,9 @@ main {
 
 .video-trigger {
   cursor: pointer;
-  transition: opacity 0.25s ease, visibility 0.25s ease;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
 }
 
 .video-trigger.is-hidden {
@@ -225,12 +227,53 @@ main {
   background: #000;
   border: 0;
   display: block;
-  transition: opacity 0.25s ease, visibility 0.25s ease;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
 }
 
 .video-player.is-visible {
   opacity: 1;
   visibility: visible;
+}
+
+/* ====Text-Section ==== */
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+}
+
+.container > p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(61, 61, 61, 1);
+  margin-bottom: 32px;
+}
+
+.custom-list {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(61, 61, 61, 1);
+ 
+}
+
+.custom-list>p{
+  
+  margin-bottom: 32px;
+}
+
+.custom-list> li {
+list-style-type: disc;
+margin-left: 40px;
+
+}
+
+.container > p:not(:first-child) {
+  margin-top: 32px;
+  margin-bottom: 88px;
 }
 
 /* ==== footer ==== */
