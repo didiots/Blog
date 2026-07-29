@@ -349,3 +349,9 @@ ol {
     width: 24px;
     height: auto;
 }
+
+.share-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
