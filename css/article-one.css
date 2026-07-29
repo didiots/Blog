@@ -316,3 +316,7 @@ ol {
 .share-toggle:checked~.share-btn:hover {
     transform: translateX(-55px) translateY(-3px) scale(1.03);
 }
+
+.share-btn:active {
+    transform: translateY(-1px) scale(0.98);
+}
