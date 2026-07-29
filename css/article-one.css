@@ -306,3 +306,9 @@ ol {
     user-select: none;
     transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s, box-shadow 0.3s;
 }
+
+.share-btn:hover {
+    transform:translateY(-3px) scale(1.03) ;
+    background-color: rgba(65, 145, 118, 1) ;
+    box-shadow: 0 8px 20px rgba(78, 164, 135, 0.4);
+}
