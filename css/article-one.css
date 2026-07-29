@@ -363,3 +363,8 @@ ol {
     font-weight: 700;
     text-decoration: underline;
 }
+
+/* === KLICK-ZUSTÄNDE (:checked) === */
+.share-toggle:checked~.share-btn .share-btn-icon {
+    display: none;
+}
