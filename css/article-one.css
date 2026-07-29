@@ -368,3 +368,9 @@ ol {
 .share-toggle:checked~.share-btn .share-btn-icon {
     display: none;
 }
+
+/* Nur der Button rutscht nach links an die Spitze des festen Pfeils*/
+.share-toggle:checked~.share-btn {
+    transform: translateX(-55px);
+/* Hier justieren, wie nah der Button an den Pfeil soll*/
+}
