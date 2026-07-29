@@ -372,5 +372,13 @@ ol {
 /* Nur der Button rutscht nach links an die Spitze des festen Pfeils*/
 .share-toggle:checked~.share-btn {
     transform: translateX(-55px);
-/* Hier justieren, wie nah der Button an den Pfeil soll*/
+    /* Hier justieren, wie nah der Button an den Pfeil soll*/
+}
+
+/* Das Menü wandert ebenfalls mit dem Button nach links*/
+.share-toggle:checked~.share-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-55px);
 }
