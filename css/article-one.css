@@ -312,3 +312,7 @@ ol {
     background-color: rgba(65, 145, 118, 1) ;
     box-shadow: 0 8px 20px rgba(78, 164, 135, 0.4);
 }
+
+.share-toggle:checked~.share-btn:hover {
+    transform: translateX(-55px) translateY(-3px) scale(1.03);
+}
