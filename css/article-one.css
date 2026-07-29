@@ -320,3 +320,8 @@ ol {
 .share-btn:active {
     transform: translateY(-1px) scale(0.98);
 }
+
+.share-btn .share-btn-icon {
+    width: 24px;
+    height: auto;
+}
