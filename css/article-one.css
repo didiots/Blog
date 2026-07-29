@@ -332,3 +332,15 @@ ol {
     font-size: 24px;
     font-weight: 700;
 }
+
+.share-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
