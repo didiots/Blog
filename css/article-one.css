@@ -344,3 +344,8 @@ ol {
     pointer-events: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
+
+.share-menu .green-share-icon {
+    width: 24px;
+    height: auto;
+}
