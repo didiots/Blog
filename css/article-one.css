@@ -355,3 +355,11 @@ ol {
     flex-direction: column;
     gap: 4px;
 }
+
+.share-links a {
+    color: rgba(78, 164, 135, 1);
+    font-family: "Arima", serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+}
