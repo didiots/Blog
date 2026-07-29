@@ -279,3 +279,14 @@ ol {
     top: 60px;
     pointer-events: none;
 }
+
+.button-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 150px;
+}
+
+.share-toggle {
+    display: none;
+}
