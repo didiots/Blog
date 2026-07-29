@@ -261,3 +261,21 @@ ol {
     align-items: center;
     gap: 48px;
 }
+
+.share-box>h3 {
+    font-family: "Arima";
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(84, 55, 13, 1);
+    text-align: center;
+}
+
+.share-box .arrow-icon {
+    position: absolute;
+    width: 218px;
+    height: 111px;
+
+    left: 384px;
+    top: 60px;
+    pointer-events: none;
+}
