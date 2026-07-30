@@ -278,6 +278,7 @@ main {
   position: relative;
   width: 1130px;
   height: 260px;
+  margin-bottom: 0px;
 }
 
 .protipps {
@@ -315,6 +316,142 @@ main {
   font-weight: 400px;
   color: rgba(61, 61, 61, 1);
 }
+
+/*===end===*/
+
+.section-04 {
+    margin: 80px 0;
+}
+
+.share-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.share-box>h3 {
+    font-family: 'Arima', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(84, 55, 13, 1);
+    text-align: center;
+}
+
+.share-box .arrow-icon {
+    position: absolute;
+    width: 218px;
+    height: 111px;
+
+    left: 384px;
+    top: 60px;
+    pointer-events: none;
+}
+
+.button-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 150px;
+}
+
+.share-toggle {
+    display: none;
+}
+
+.share-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(78, 164, 135, 1);
+    width: 158px;
+    height: 48px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+    background-color 0.3s, box-shadow 0.3s;
+}
+
+.share-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    background-color: rgba(65, 145, 118, 1);
+    box-shadow: 0 8px 20px rgba(78, 164, 135, 0.4);
+}
+
+.share-toggle:checked~.share-btn:hover {
+    transform: translateX(-55px) translateY(-3px) scale(1.03);
+}
+
+.share-btn:active {
+    transform: translateY(-1px) scale(0.98);
+}
+
+.share-btn .share-btn-icon {
+    width: 24px;
+    height: auto;
+}
+
+.share-btn>span {
+    color: rgba(241, 201, 83, 1);
+    font-family: 'Arima', serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.share-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.share-menu .green-share-icon {
+    width: 24px;
+    height: auto;
+}
+
+.share-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.share-links a {
+    color: rgba(78, 164, 135, 1);
+    font-family: 'Arima', serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+.share-toggle:checked~.share-btn .share-btn-icon {
+    display: none;
+}
+
+.share-toggle:checked~.share-btn {
+    transform: translateX(-55px);
+}
+
+.share-toggle:checked~.share-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-55px);
+}
+
+
+
 /* ==== footer ==== */
 footer {
   background-color: rgba(78, 164, 135, 1);
