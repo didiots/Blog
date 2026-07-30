@@ -394,6 +394,7 @@ main {
 .share-btn .share-btn-icon {
     width: 24px;
     height: auto;
+    display: block;
 }
 
 .share-btn>span {
@@ -435,19 +436,19 @@ main {
 }
 
 
-.share-toggle:checked~.share-btn .share-btn-icon {
+.share-toggle:checked ~ .button-wrapper .share-btn .share-btn-icon {
     display: none;
 }
 
-.share-toggle:checked~.share-btn {
-    transform: translateX(-55px);
+.share-toggle:checked ~ .button-wrapper .share-btn {
+    transform: translateX(-130px);
 }
 
-.share-toggle:checked~.share-menu {
+.share-toggle:checked ~ .share-menu {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateX(-55px);
+    transform: translateX(-42px);
 }
 
 
