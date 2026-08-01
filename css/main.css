@@ -133,13 +133,13 @@ main {
 }
 
 .headline-text {
-    max-width:979px;
+    max-width: 979px;
 
     display: flex;
     flex-direction: column;
     gap: 24px;
-    
-    text-align:center;
+
+    text-align: center;
 }
 
 .headline {
@@ -160,6 +160,14 @@ main {
     font-weight: 700;
     font-size: 52px;
     color: rgba(78, 164, 135, 1);
+}
+
+.headline-text>p {
+    font-family: "Open Sans";
+    font-style: medium;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(84, 55, 13, 1);
 }
 
 /* ==== footer ==== */
