@@ -120,10 +120,26 @@ main {
 }
 
 /* ==== content wrapper ==== */
+.content-wrapper {
+    max-width: 1200px;
+
+    margin: 74px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
 .headline-text {
+    max-width:979px;
+
     display: flex;
     flex-direction: column;
     gap: 24px;
+    
+    text-align:center;
 }
 
 .headline {
