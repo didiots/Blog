@@ -217,6 +217,11 @@ main {
     gap: 22px;
 }
 
+.radio-btn>input {
+    width: 28px;
+    height: 28px;
+}
+
 
 /* ==== footer ==== */
 footer {
