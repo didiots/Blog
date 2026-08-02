@@ -170,6 +170,14 @@ main {
     color: rgba(84, 55, 13, 1);
 }
 
+/* ==== highlight-slider ==== */
+
+.highlight-slider-wrapper img {
+    max-height: 533px;
+    width: 100%;
+}
+
+
 /* ==== footer ==== */
 footer {
     background-color: rgba(78, 164, 135, 1);
