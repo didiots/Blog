@@ -207,6 +207,16 @@ main {
     height: 100%;
 }
 
+.radio-btn {
+    z-index: 2;
+    position: absolute;
+    bottom: 44px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 22px;
+}
+
 
 /* ==== footer ==== */
 footer {
