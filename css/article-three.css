@@ -221,7 +221,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 48px;
+    gap: 36px;
 }
 
 .share-box>h3 {
@@ -242,11 +242,15 @@ main {
     pointer-events: none;
 }
 
+.arrow-icon-respon {
+    display: none;
+}
+
 .button-wrapper {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 15px;
-    padding-left: 150px;
+    gap: 8px;
+    padding-left: 142px;
 }
 
 .share-toggle {
@@ -267,7 +271,7 @@ main {
     cursor: pointer;
     user-select: none;
     transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
-    background-color 0.3s, box-shadow 0.3s;
+        background-color 0.3s, box-shadow 0.3s;
 }
 
 .share-btn:hover {
@@ -322,18 +326,18 @@ main {
 .share-links a {
     color: rgba(78, 164, 135, 1);
     font-family: 'Arima', serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 500;
     text-decoration: underline;
 }
 
-/* == KLICK-ZUSTÄNDE (:checked)== */
 .share-toggle:checked~.share-btn .share-btn-icon {
     display: none;
 }
 
 .share-toggle:checked~.share-btn {
     transform: translateX(-55px);
+    width: 120px;
 }
 
 .share-toggle:checked~.share-menu {
@@ -341,4 +345,8 @@ main {
     visibility: visible;
     pointer-events: auto;
     transform: translateX(-55px);
+}
+
+.button-wrapper:has(.share-toggle:checked) {
+    padding-left: 128px;
 }
