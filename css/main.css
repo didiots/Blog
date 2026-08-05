@@ -195,6 +195,7 @@ main {
     overflow: hidden;
 
     border-top-right-radius:100px;
+    cursor:pointer;
 }
 
 .highlight-slider-wrapper {
@@ -223,6 +224,7 @@ main {
 
     width: 28px;
     height: 28px;
+    cursor:pointer;
 }
 
 .highlight-slider input[value="two"]:checked~ .highlight-slider-wrapper{
