@@ -193,6 +193,8 @@ main {
     gap: 22px;
 
     overflow: hidden;
+
+    border-top-right-radius:100px;
 }
 
 .highlight-slider-wrapper {
@@ -203,11 +205,12 @@ main {
     top: 0;
     left: 0;
     display: flex;
+
+    transition: all 1s ease-in-out; 
 }
 
 .highlight-slider-wrapper img {
   object-fit: cover;
-  border-top-right-radius:100px;
 }
 
 .highlight-slider-element {
@@ -222,6 +225,15 @@ main {
     height: 28px;
 }
 
+.highlight-slider input[value="two"]:checked~ .highlight-slider-wrapper{
+    transform: translateX(calc(-100% / 4));
+}
+.highlight-slider input[value="three"]:checked~ .highlight-slider-wrapper{
+    transform: translateX(calc((-100% / 4) * 2));
+}
+.highlight-slider input[value="four"]:checked~ .highlight-slider-wrapper{
+    transform: translateX(calc((-100% / 4) * 3));
+}
 
 
 /* ==== footer ==== */
