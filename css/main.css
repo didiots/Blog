@@ -185,6 +185,13 @@ main {
     width: 100%;
 
     position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 44px;
+    gap: 22px;
+
     overflow: hidden;
 }
 
@@ -193,13 +200,14 @@ main {
     height: 100%;
 
     position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
 }
 
 .highlight-slider-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  object-fit: cover;
+  border-top-right-radius:100px;
 }
 
 .highlight-slider-element {
@@ -207,20 +215,13 @@ main {
     height: 100%;
 }
 
-.radio-btn {
+.highlight-slider input {
     z-index: 2;
-    position: absolute;
-    bottom: 44px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 22px;
-}
 
-.radio-btn>input {
     width: 28px;
     height: 28px;
 }
+
 
 
 /* ==== footer ==== */
