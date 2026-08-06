@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Preferences</title>
+
+    <link rel="icon" type="image/png" href="./assets/icons/icon-travelBlog.png">
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <style>
+        .navigator-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        .cookie-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .cookie-page>p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            color: #5c482c;
+        }
+
+        .cookie-page h1 {
+            font-family: 'Arima', serif;
+            color: #f1ca55;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .cookie-form {
+            margin-top: 20px;
+        }
+
+        .cookie-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e2f0e8;
+            padding: 20px 24px;
+            border-radius: 16px;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .cookie-info h3 {
+            font-family: 'Arima', serif;
+            color: #43331b;
+            margin-bottom: 8px;
+        }
+
+        .cookie-info p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: #5c482c;
+            line-height: 1.4;
+        }
+
+        .cookie-action {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .cookie-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            margin-top: 80px;
+        }
+
+        .btn-save,
+        .btn-accept-all {
+            padding: 12px 24px;
+            border-radius: 40px;
+            border: none;
+            font-family: 'Arima', serif;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .btn-save {
+            background-color: #4ea487;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .btn-save:hover {
+            transform: translateY(-3px) scale(1.03);
+            background-color: rgba(65, 145, 118, 1);
+            box-shadow: 0 8px 20px rgba(78, 164, 135, 0.4);
+        }
+
+        .btn-accept-all {
+            background-color: #f1ca55;
+            color: #43331b;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .btn-accept-all:hover {
+            transform: translateY(-3px) scale(1.03);
+            background-color: #f1ca55;
+            box-shadow: 0 8px 20px rgba(78, 164, 135, 0.4);
+            color: #43331b7c;
+        }
+
+        label {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: #5c482c;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigator-bar">
+
+            <div class="blog-logo">
+                <a href="index.html"><img src="./assets/img/logo-travelBlog.png" alt="Travel Blog Logo"></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="cookie-page">
+        <h1>Cookie-Einstellungen</h1>
+        <p>Wir nutzen Cookies, um dir das beste Erlebnis auf unserem Travel-Blog zu bieten. Hier kannst du deine
+            Einstellungen individuell anpassen.</p>
+
+        <form class="cookie-form">
+            <div class="cookie-card">
+                <div class="cookie-info">
+                    <h3>Essenzielle Cookies</h3>
+                    <p>Diese Cookies sind für die Grundfunktionen der Website erforderlich und können nicht deaktiviert
+                        werden.</p>
+                </div>
+                <div class="cookie-action">
+                    <input type="checkbox" checked disabled id="essential">
+                    <label for="essential">Immer aktiv</label>
+                </div>
+            </div>
+
+            <div class="cookie-card">
+                <div class="cookie-info">
+                    <h3>Analyse-Cookies</h3>
+                    <p>Helfen uns zu verstehen, wie Besucher mit der Website interagieren, indem Informationen anonym
+                        gesammelt werden.</p>
+                </div>
+                <div class="cookie-action">
+                    <input type="checkbox" id="analytics">
+                    <label for="analytics">Erlauben</label>
+                </div>
+            </div>
+
+            <div class="cookie-card">
+                <div class="cookie-info">
+                    <h3>Marketing-Cookies</h3>
+                    <p>Werden verwendet, um Besuchern auf Webseiten zu folgen und relevante Werbung anzuzeigen.</p>
+                </div>
+                <div class="cookie-action">
+                    <input type="checkbox" id="marketing">
+                    <label for="marketing">Erlauben</label>
+                </div>
+            </div>
+
+            <div class="cookie-buttons">
+                <button type="submit" class="btn-save">Einstellungen speichern</button>
+                <button type="button" class="btn-accept-all">Alle akzeptieren</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <div class="footer-left-copyright">
+                    <img src="./assets/icons/icon-copyright.png" alt="Copyright Symbol">
+                    <p>Travel Blog 2026</p>
+                </div>
+                <div class="footer-left-links">
+                    <a href="imprint.html">Imprint</a>
+                    <a href="cookies.html">Cookie Preferences</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <a href="https://www.tiktok.com" target="_blank"><img class="footer-social-logos"
+                        src="./assets/icons/icon-tiktok.png" alt="TikTok Icon"></a>
+
+                <a href="https://www.youtube.com" target="_blank"><img class="footer-social-logos"
+                        src="./assets/icons/icon-youtube.png" alt="Youtube Icon"></a>
+
+                <a href="https://www.facebook.com" target="_blank"><img class="footer-social-logos"
+                        src="./assets/icons/icon-facebook.png" alt="Facebook Icon"></a>
+
+                <a href="https://www.instagram.com" target="_blank"><img class="footer-social-logos"
+                        src="./assets/icons/icon-Instagram.png" alt="Instagram Icon"></a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
