@@ -316,7 +316,11 @@ main {
   font-weight: 400px;
   color: rgba(61, 61, 61, 1);
 }
-
+.text-section-ramen  a {
+  font-family:sans-serif;
+  font-weight: 700;
+  color: rgba(78, 164, 135, 1);
+}
 /*===end===*/
 
 .section-04 {
@@ -328,7 +332,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 48px;
+    gap: 36px;
 }
 
 .share-box>h3 {
@@ -349,11 +353,15 @@ main {
     pointer-events: none;
 }
 
+.arrow-icon-respon {
+    display: none;
+}
+
 .button-wrapper {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 15px;
-    padding-left: 150px;
+    gap: 8px;
+    padding-left: 142px;
 }
 
 .share-toggle {
@@ -374,7 +382,7 @@ main {
     cursor: pointer;
     user-select: none;
     transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
-    background-color 0.3s, box-shadow 0.3s;
+        background-color 0.3s, box-shadow 0.3s;
 }
 
 .share-btn:hover {
@@ -394,7 +402,6 @@ main {
 .share-btn .share-btn-icon {
     width: 24px;
     height: auto;
-    display: block;
 }
 
 .share-btn>span {
@@ -430,27 +437,30 @@ main {
 .share-links a {
     color: rgba(78, 164, 135, 1);
     font-family: 'Arima', serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 500;
     text-decoration: underline;
 }
 
-
-.share-toggle:checked ~ .button-wrapper .share-btn .share-btn-icon {
+.share-toggle:checked~.share-btn .share-btn-icon {
     display: none;
 }
 
-.share-toggle:checked ~ .button-wrapper .share-btn {
-    transform: translateX(-130px);
+.share-toggle:checked~.share-btn {
+    transform: translateX(-55px);
+    width: 120px;
 }
 
-.share-toggle:checked ~ .share-menu {
+.share-toggle:checked~.share-menu {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateX(-42px);
+    transform: translateX(-55px);
 }
 
+.button-wrapper:has(.share-toggle:checked) {
+    padding-left: 128px;
+}
 
 
 /* ==== footer ==== */
