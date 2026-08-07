@@ -44,7 +44,6 @@ main {
 }
 
 /* ==== hero section ==== */
-
 .hero-content-wrapper {
     position: relative;
     max-width: 1440px;
@@ -189,7 +188,6 @@ footer {
 }
 
 /* == bottom-nav == */
-
 .bottom-nav {
     background-color: rgba(241, 201, 83, 1);
     height: 88px;
