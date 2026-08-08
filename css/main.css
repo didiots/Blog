@@ -187,6 +187,8 @@ footer {
 
 .footer-social-logos {
     transition: filter 0.3s ease;
+    width: auto;
+    height: 32px;
 }
 
 .footer-social-logos:hover {
