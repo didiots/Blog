@@ -108,26 +108,28 @@
 
 <section class="video-section">
   <div class="video-wrapper">
-    <div class="video-trigger" id="videoTrigger">
+    <input type="checkbox" id="video-toggle" class="video-toggle" />
+
+    <label class="video-trigger" for="video-toggle" id="videoTrigger">
       <img
         class="video-poster"
         src="./assets/img/img-copenhagen.jpg"
         alt="Bild von Kopenhagen"
       />
-      <button class="play-button" type="button" aria-label="Video abspielen">
+      <span class="play-button" aria-label="Video abspielen">
         <img
           class="play-icon"
           src="./assets/icons/icon_play_circle.png"
           alt="Play Icon"
         />
-      </button>
-    </div>
+      </span>
+    </label>
 
     <iframe
       class="video-player"
       id="videoPlayer"
       title="YouTube Video"
-      src=""
+      src="https://www.youtube.com/embed/aslDoa-PYWM?rel=0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
     ></iframe>
@@ -185,31 +187,36 @@
 </section>
 
 <section class="section-04">
-            <div class="share-box">
+            <div class="share-text">
                 <h3>Follow me for more content like this, and
                     <br>share the article with your friends!
                 </h3>
+            </div>
 
-                <img class="arrow-icon" src="./assets/img/logo-vector12.svg" alt="Arrow Icon">
-                <img class="arrow-icon-respon" src="./assets/icons/icon-vector-12.png" alt="Arrow Icon smaller">
+            <div class="arrow-button-wrapper">
 
-                <div class="button-wrapper">
-                    <input type="checkbox" id="share-toggle" class="share-toggle">
-
-                    <label for="share-toggle" class="share-btn">
-                        <img src="./assets/icons/icon-share-yellow.svg" alt="Share Icon" class="share-btn-icon">
-                        <span>Share</span>
-                    </label>
-
-                    <div class="share-menu">
-                        <img src="./assets/icons/icon-share.svg" alt="Share Icon Green" class="green-share-icon">
-
-                        <div class="share-links">
-                            <a href="https://de.linkedin.com/" target="_blank">LinkedIn</a>
-                            <a href="https://www.whatsapp.com/?lang=de" target="_blank">WhatsApp</a>
-                        </div>
-                    </div>
+                <div class="yellow-arrows">
+                    <img class="arrow-icon" src="./assets/img/logo-vector12.svg" alt="yellow right icon">
+                    <img class="arrow-icon-respon" src="./assets/icons/icon-vector-12.png" alt="yellow right icon xs">
                 </div>
+
+                <input type="checkbox" id="share-toggle" class="share-toggle">
+
+                <label for="share-toggle" class="share-btn-wrapper">
+                    <img class="share-btn-icon" src="./assets/icons/icon-share-yellow.svg" alt="yellow share icon">
+                    <span>Share</span>
+                </label>
+
+                <div class="share-branch">
+                    <img src="./assets/icons/icon-share.svg" alt="" class="green-share-icon">
+
+                    <ul class="share-links">
+                        <li><a href="https://de.linkedin.com/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li><a href="https://www.whatsapp.com/?lang=de" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+
             </div>
         </section>
 
@@ -263,18 +270,6 @@
       </div>
     </footer>
 
-    <script>
-      const videoTrigger = document.getElementById("videoTrigger");
-      const videoPlayer = document.getElementById("videoPlayer");
-      const youtubeVideoId = "aslDoa-PYWM";
 
-      if (videoTrigger && videoPlayer) {
-        videoTrigger.addEventListener("click", () => {
-          videoTrigger.classList.add("is-hidden");
-          videoPlayer.classList.add("is-visible");
-          videoPlayer.src = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0`;
-        });
-      }
-    </script>
   </body>
 </html>

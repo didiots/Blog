@@ -189,3 +189,20 @@ footer {
 .footer-social-logos:hover {
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.8));
 }
+
+/* == bottom-nav == */
+.bottom-nav {
+    background-color: rgba(241, 201, 83, 1);
+    height: 88px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-nav-icons {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    width: 31px;
+    height: auto;
+}
