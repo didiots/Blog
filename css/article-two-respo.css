@@ -118,16 +118,20 @@
   }
 
   .icon-pro-tipps {
-    position: static;
-    display: flex;
-    justify-content: center;
-    transform: none;
-    margin: 0 0 16px 0;
+    position: absolute;
+    top: -68px;
+    left: -96px;
+    display: inline-block;
+    transform: rotate(-13.67deg);
+    transform-origin: center;
+    margin: 0;
+    z-index: 2;
   }
 
   .icon-pro-tipps img {
-    width: 100%;
-    max-width: 220px;
+    width: auto;    
+    max-width: none;
+    display: block;
   }
 
   .text-section-ramen {
