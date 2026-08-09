@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 
   /* == main section == */
   main {
@@ -168,5 +168,80 @@
   .share-toggle:checked~.share-branch {
     display: flex;
     transform: translateX(-93px) translateY(33px) scale(2);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .section-01 {
+    padding-top: 20px;
+  }
+
+  .headline-extraInfo-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headline-extraInfo {
+    margin-bottom: 20px;
+  }
+
+  .headline-info-box-left>h1 {
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 16px 0;
+  }
+
+  .headline-info-box-left>p.sub-headline {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .headline-info-box-left>p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .headline-info-box-meta {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 0 0;
+    gap: 16px;
+  }
+
+  .headline-author-info-right {
+    padding: 24px 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 10px;
+    max-width: none;
+  }
+
+  .headline-author-info-right img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0px;
+  }
+
+  .headline-author-name {
+    margin-bottom: 0px;
+  }
+
+  .headline-author-name>h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.0;
+  }
+
+  .headline-author-name>p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .headline-author-info-right>p {
+    font-size: 14px;
+    line-height: 1.5;
   }
 }
