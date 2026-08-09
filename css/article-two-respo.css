@@ -129,7 +129,7 @@
   }
 
   .icon-pro-tipps img {
-    width: auto;    
+    width: auto;
     max-width: none;
     display: block;
   }
@@ -222,17 +222,22 @@
 
   .footer-container {
     display: flex;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     min-height: 134px;
     padding: 0 15px 24px;
     gap: 0;
+    flex-wrap: wrap;
   }
 
   .footer-left {
+    flex: 1 1 auto;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    width: 100%;
+    width: auto;
   }
 
   .footer-left-copyright {
@@ -254,8 +259,9 @@
     align-items: center;
     gap: 16px;
     margin-top: 4px;
-    margin-left: auto;
-    align-self: flex-start;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    align-self: flex-end;
   }
 
   .footer-right a {
@@ -305,9 +311,3 @@
     display: block;
   }
 }
-
-
-
-  
-
-
