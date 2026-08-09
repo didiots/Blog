@@ -119,10 +119,10 @@
 
   .icon-pro-tipps {
     position: absolute;
-    top: -68px;
-    left: -96px;
+    top: -100px;
+    left: -1px;
     display: inline-block;
-    transform: rotate(-13.67deg);
+    transform: rotate(-1deg);
     transform-origin: center;
     margin: 0;
     z-index: 2;
