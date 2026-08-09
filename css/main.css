@@ -182,11 +182,11 @@ main {
 
 .highlight-slider {
     height: 533px;
-    width: 100%;
+    width: 100%;        /* 100% von -> [.content-wrapper {max-width: 1200px;}] -> Zeile 124 . */
 
-    position: relative;
+    position: relative;      /* Das ist der Rahmen für [.highlight-slider-wrapper] .  */
 
-    display: flex;
+    display: flex;      /* Das macht [.highlight-slider input] innerhalb von [.highlight-slider] flexibel . */
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 44px;
@@ -194,29 +194,8 @@ main {
 
     overflow: hidden;
 
-    border-top-right-radius:100px;
-    cursor:pointer;
-}
-
-.highlight-slider-wrapper {
-    width: 400%;
-    height: 100%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-
-    transition: all 1s ease-in-out; 
-}
-
-.highlight-slider-wrapper img {
-  object-fit: cover;
-}
-
-.highlight-slider-element {
-    width: calc(100% / 4);
-    height: 100%;
+    border-top-right-radius: 100px;
+    cursor: pointer;
 }
 
 .highlight-slider input {
@@ -224,16 +203,83 @@ main {
 
     width: 28px;
     height: 28px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.highlight-slider input[value="two"]:checked~ .highlight-slider-wrapper{
+.highlight-slider-wrapper {
+    width: 400%;
+    height: 100%;
+
+    position: absolute;    /* [.highlight-slider-wrapper] wird aus dem [.highlight-slider] rausgenommen. */
+    top: 0;
+    left: 0;
+    display: flex;
+
+    transition: all 1s ease-in-out;
+}
+
+.highlight-slider-element {
+    width: calc(100% / 4);     /* 100% = [.highlight-slider-wrapper { width: 400%; } ]*/
+    height: 100%;
+
+    position: relative;     
+}
+
+.slider-img>img {               /* == hier stimmt was nicht, das Bild muss irgendwie [objekt-fit:cover] sein !!! == */ 
+     max-height: 533px;
+    width: 100%;        /* 100% von [.highlight-slider] -> Zeile 183 . */
+}
+
+.slider-text{
+    
+max-width: 881px;
+
+backdrop-filter: blur(16px);
+
+position: absolute;     /* Hier wird der Text aus [.highlight-slider-element] rausgenommen .  */
+top: 54px;
+left: 38px;
+
+display: flex;
+flex-direction: column;
+gap: 8px;
+
+padding: 16px 24px;;
+
+box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.08),
+  1px 2px 4px rgba(255, 255, 255, 0.08),
+  3px 4px 9px rgba(255, 255, 255, 0.08),
+  6px 8px 15px rgba(255, 255, 255, 0.08),
+  9px 12px 24px rgba(255, 255, 255, 0.08);
+
+
+}
+
+.slider-text>h3 {
+    color: rgba(255, 255, 255, 1);
+  font-family: "Open Sans";
+  font-style: bold;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.slider-text>p {
+     color: rgba(255, 255, 255, 1);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.highlight-slider input[value="two"]:checked~.highlight-slider-wrapper {
     transform: translateX(calc(-100% / 4));
 }
-.highlight-slider input[value="three"]:checked~ .highlight-slider-wrapper{
+
+.highlight-slider input[value="three"]:checked~.highlight-slider-wrapper {
     transform: translateX(calc((-100% / 4) * 2));
 }
-.highlight-slider input[value="four"]:checked~ .highlight-slider-wrapper{
+
+.highlight-slider input[value="four"]:checked~.highlight-slider-wrapper {
     transform: translateX(calc((-100% / 4) * 3));
 }
 
