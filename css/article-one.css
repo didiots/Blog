@@ -164,7 +164,6 @@ h4 {
 .carousel-card {
     z-index: 1;
     width: 200px;
-    /* height: 80%; */
 
     transform: perspective(250px) rotateY(10deg) translate(-50px);
     transform-origin: 50% 50%;
@@ -266,132 +265,110 @@ ol {
     margin: 80px 0;
 }
 
-/* === Ankerpunkt für den starren Pfeil === */
-.share-box {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-}
-
-.share-box>h3 {
-    font-family: "Arima";
-    font-size: 24px;
+.share-text>h3 {
+    font-family: 'Arima', serif;
+    /* CLAMP: Skaliert von 18px bis 24px */
+    font-size: clamp(1.125rem, 1vw + 0.8rem, 1.5rem);
     font-weight: 400;
     color: rgba(84, 55, 13, 1);
     text-align: center;
 }
 
-.share-box .arrow-icon {
-    position: absolute;
-    width: 218px;
-    height: 111px;
-
-    left: 384px;
-    top: 60px;
-    pointer-events: none;
+.arrow-button-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 160px auto;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 48px;
+    padding-right: 108px;
+    margin-top: -20px;
 }
 
-.button-wrapper {
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
-    padding-left: 150px;
+.arrow-icon {
+    width: 107px;
+    height: auto;
+}
+
+.arrow-icon-respon {
+    display: none;
 }
 
 .share-toggle {
     display: none;
 }
 
-.share-btn {
+.arrow-button-wrapper>label {
+    justify-self: center;
     display: flex;
+    position: relative;
+    top: 10px;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     background-color: rgba(78, 164, 135, 1);
-    width: 158px;
     height: 48px;
+    width: 160px;
     border-radius: 40px;
-    border: none;
-    outline: none;
+    color: rgba(241, 201, 83, 1);
+    font-family: 'Arima';
+    font-weight: 700;
+    font-size: 24px;
     cursor: pointer;
     user-select: none;
-    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+        background-color 0.3s, box-shadow 0.3s;
 }
 
-.share-btn:hover {
+.arrow-button-wrapper>label:hover {
     transform: translateY(-3px) scale(1.03);
     background-color: rgba(65, 145, 118, 1);
     box-shadow: 0 8px 20px rgba(78, 164, 135, 0.4);
 }
 
-.share-toggle:checked~.share-btn:hover {
-    transform: translateX(-55px) translateY(-3px) scale(1.03);
+.share-toggle:checked~.share-btn-wrapper {
+    transform: translateX(-62px) translateY(-3px) scale(1.03);
+    width: 120px;
 }
 
-.share-btn:active {
-    transform: translateY(-1px) scale(0.98);
+.share-toggle:checked~.share-btn-wrapper .share-btn-icon {
+    display: none;
 }
 
-.share-btn .share-btn-icon {
-    width: 24px;
-    height: auto;
-}
-
-.share-btn>span {
-    color: rgba(241, 201, 83, 1);
-    font-family: "Arima";
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.share-menu {
-    display: flex;
+.share-branch {
+    display: none;
+    position: absolute;
+    grid-column: 3;
+    grid-row: 1;
+    gap: 8px;
     align-items: center;
-    gap: 12px;
-    white-space: nowrap;
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: 0;
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
 
-.share-menu .green-share-icon {
-    width: 24px;
+.share-branch>img {
+    width: 12px;
     height: auto;
 }
 
 .share-links {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    padding-bottom: 8px;
+}
+
+.share-links li {
+    list-style: none;
+    line-height: 1.0;
 }
 
 .share-links a {
-    color: rgba(78, 164, 135, 1);
-    font-family: "Arima", serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-family: 'Arima';
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(65, 145, 118, 0.845);
     text-decoration: underline;
+    text-decoration-color: rgba(65, 145, 118, 0.551);
+    text-underline-offset: 1px;
 }
 
-/* === KLICK-ZUSTÄNDE (:checked) === */
-.share-toggle:checked~.share-btn .share-btn-icon {
-    display: none;
-}
-
-/* Nur der Button rutscht nach links an die Spitze des festen Pfeils*/
-.share-toggle:checked~.share-btn {
-    transform: translateX(-55px);
-    /* Hier justieren, wie nah der Button an den Pfeil soll*/
-}
-
-/* Das Menü wandert ebenfalls mit dem Button nach links*/
-.share-toggle:checked~.share-menu {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateX(-55px);
+.share-toggle:checked~.share-branch {
+    display: flex;
+    transform: translateX(-88px) translateY(4px) scale(2);
 }
