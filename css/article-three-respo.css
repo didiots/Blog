@@ -1,0 +1,247 @@
+@media screen and (max-width: 480px) {
+
+  /* == main section == */
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .section-01 {
+    padding-top: 24px;
+  }
+
+  .headline-extraInfo-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headline-info-box-left>h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.05;
+    margin-top: 4px;
+    margin-bottom: 12px;
+  }
+
+  .headline-info-box-left>p.sub-headline {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .headline-info-box-left>p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .headline-info-box-meta {
+    flex-wrap: wrap;
+    padding: 24px 0;
+    gap: 16px;
+  }
+
+  .headline-icon-box {
+    gap: 6px;
+  }
+
+  .headline-icons {
+    width: 16px;
+    height: auto;
+  }
+
+  .headline-author-info-right {
+    padding: 16px;
+    max-width: none;
+  }
+
+  .headline-author-name {
+    margin-bottom: 16px;
+  }
+
+  .headline-author-name>h3 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .headline-author-name>p {
+    font-family: 'Arima';
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .headline-info-box-bottom>p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 40px;
+    margin-bottom: 32px;
+  }
+
+  /* == Section 2 == */
+  .section-02 {
+    gap: 32px;
+  }
+
+  .rain-graph-box {
+    margin-bottom: 0;
+  }
+
+  .rain-graph-box>h2 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .rain-graph-box>img {
+    width: 100%;
+    height: auto;
+    padding-top: 24px;
+    border-radius: 30px;
+  }
+
+  .rain-graph-text>p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+
+  /* == Section 3 == */
+  .section-03 {
+    gap: 32px;
+  }
+
+  .two-graph-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .graph-box-left>h2,
+  .graph-box-right>h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .graph-box-left>p,
+  .graph-box-right>p,
+  .section-03-text {
+    font-size: 16px;
+  }
+
+  /* == Section 4 == */
+  .section-04 {
+    margin: 40px 0;
+  }
+
+  .share-text>h3 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .arrow-button-wrapper {
+    grid-template-columns: auto 160px auto;
+    gap: 48px;
+    padding-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 88px;
+  }
+
+  .yellow-arrow {
+    margin-bottom: 28px;
+  }
+
+  .arrow-icon {
+    display: none;
+  }
+
+  .arrow-icon-respon {
+    display: block;
+  }
+
+  .arrow-button-wrapper>label {
+    top: 38px;
+  }
+
+  .share-toggle:checked~.share-btn-wrapper {
+    transform: translateX(-68px) translateY(-3px) scale(1.03);
+    width: 120px;
+  }
+
+  .share-toggle:checked~.share-branch {
+    display: flex;
+    transform: translateX(-93px) translateY(33px) scale(2);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .section-01 {
+    padding-top: 20px;
+  }
+
+  .headline-extraInfo-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headline-extraInfo {
+    margin-bottom: 20px;
+  }
+
+  .headline-info-box-left>h1 {
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 16px 0;
+  }
+
+  .headline-info-box-left>p.sub-headline {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .headline-info-box-left>p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .headline-info-box-meta {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 0 0;
+    gap: 16px;
+  }
+
+  .headline-author-info-right {
+    padding: 24px 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 10px;
+    max-width: none;
+  }
+
+  .headline-author-info-right img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0px;
+  }
+
+  .headline-author-name {
+    margin-bottom: 0px;
+  }
+
+  .headline-author-name>h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.0;
+  }
+
+  .headline-author-name>p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .headline-author-info-right>p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
