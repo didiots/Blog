@@ -125,6 +125,215 @@ main {
 }
 
 /* ==== content wrapper ==== */
+.content-wrapper {
+    max-width: 1200px;
+
+    margin: 74px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.highlights {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 88px;
+
+    margin: 0 auto;
+}
+
+.headline-text {
+    max-width: 979px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    text-align: center;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.headline>img {
+    width: 48px;
+    height: 48px;
+}
+
+.headline>h1 {
+    font-family: "Arima";
+    font-style: bold;
+    font-weight: 700;
+    font-size: 52px;
+    color: rgba(78, 164, 135, 1);
+}
+
+.headline-text>p {
+    font-family: "Open Sans";
+    font-style: medium;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(84, 55, 13, 1);
+}
+
+/* ==== highlight-slider ==== */
+
+.highlight-slider {
+    height: 533px;
+    width: 100%;
+    /* 100% von -> [.content-wrapper {max-width: 1200px;}] -> Zeile 124 . */
+
+    position: relative;
+    /* Das ist der Rahmen für [.highlight-slider-wrapper] .  */
+
+    display: flex;
+    /* Das macht [.highlight-slider input] innerhalb von [.highlight-slider] flexibel . */
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 44px;
+    gap: 22px;
+
+    overflow: hidden;
+
+    border-top-right-radius: 100px;
+    cursor: pointer;
+}
+
+.highlight-slider input {
+    z-index: 2;
+
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.highlight-slider-wrapper {
+    width: 400%;
+    height: 100%;
+
+    position: absolute;
+    /* [.highlight-slider-wrapper] wird aus dem [.highlight-slider] rausgenommen. */
+    top: 0;
+    left: 0;
+    display: flex;
+
+    transition: all 1s ease-in-out;
+}
+
+.highlight-slider-element {
+    width: calc(100% / 4);
+    /* 100% = [.highlight-slider-wrapper { width: 400%; } ]*/
+    height: 100%;
+
+    position: relative;
+}
+
+.slider-img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-img>img {
+    width: 100%;
+    /* 100% von [.highlight-slider] -> Zeile 183 . */
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.slider-text {
+
+    max-width: 881px;
+
+    backdrop-filter: blur(16px);
+
+    position: absolute;
+    /* Hier wird der Text aus [.highlight-slider-element] rausgenommen .  */
+    top: 54px;
+    left: 38px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    padding: 16px 24px;
+
+    box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.08),
+        1px 2px 4px rgba(255, 255, 255, 0.08),
+        3px 4px 9px rgba(255, 255, 255, 0.08),
+        6px 8px 15px rgba(255, 255, 255, 0.08),
+        9px 12px 24px rgba(255, 255, 255, 0.08);
+
+
+}
+
+.slider-text>h3 {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Open Sans";
+    font-style: bold;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.slider-text>p {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.highlight-slider input[value="two"]:checked~.highlight-slider-wrapper {
+    transform: translateX(calc(-100% / 4));
+}
+
+.highlight-slider input[value="three"]:checked~.highlight-slider-wrapper {
+    transform: translateX(calc((-100% / 4) * 2));
+}
+
+.highlight-slider input[value="four"]:checked~.highlight-slider-wrapper {
+    transform: translateX(calc((-100% / 4) * 3));
+}
+
+/* ==== FAQ ==== */
+
+.FAQ {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    margin: 0 auto;
+}
+
+.faq-headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.faq-headline>img {
+    width: 48px;
+    height: 48px;
+}
+
+.faq-headline>h1 {
+    font-family: "Arima";
+    font-style: bold;
+    font-weight: 700;
+    font-size: 52px;
+    color: rgba(78, 164, 135, 1);
+}
 
 /* ==== footer ==== */
 footer {
