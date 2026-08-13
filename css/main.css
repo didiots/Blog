@@ -208,12 +208,28 @@ main {
     cursor: pointer;
 }
 
+/* Radio-Buttons (Inaktiv: 28 x 28 px) */
 .highlight-slider input {
+    appearance: none;
     z-index: 2;
 
     width: 28px;
     height: 28px;
+    background-color: #ffffff;
+    border-radius: 50%;
     cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Aktiver Radio-Button (Aktiv: 40 x 28 px) */
+.highlight-slider input:checked {
+    width: 40px;
+    /* Genau die 40px aus Figma */
+    background-color: rgba(241, 201, 83, 1);
+    border-radius: 14px;
+    /* Hält die Kanten bei 28px Höhe perfekt rund */
 }
 
 .highlight-slider-wrapper {
