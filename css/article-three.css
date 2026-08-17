@@ -28,22 +28,29 @@ main {
 }
 
 .headline-info-box-left>h1 {
-    font-family: 'Arima';
-    font-size: 64px;
+    font-family: 'Arima', serif;
+    /* CLAMP: Skaliert von 26px (Mobil) bis 64px (Desktop) */
+    font-size: clamp(1.625rem, 3.3vw + 0.95rem, 4rem);
     font-weight: 600;
     color: rgb(241, 202, 85);
+    line-height: 1.15;
+    /* Hält den Text auf Handys schön kompakt */
+    padding-bottom: 8px;
 }
 
 .headline-info-box-left>p.sub-headline {
     order: -1;
-    font-size: 40px;
+    /* CLAMP: Skaliert von 18px bis 40px */
+    font-size: clamp(1.125rem, 3.5vw + 0.3rem, 2.5rem);
     font-weight: 500;
     color: rgba(78, 164, 135, 1);
+    padding-bottom: 8px;
 }
 
 .headline-info-box-left>p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
+    /* CLAMP: Skaliert von 16px bis 24px */
+    font-size: clamp(1rem, 1vw + 0.75rem, 1.5rem);
     font-weight: 400;
     color: rgba(84, 55, 13, 1);
 }
@@ -76,14 +83,13 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 320px;
+    max-width: 345px;
 }
 
 .headline-author-info-right img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-
     object-fit: cover;
     margin-bottom: 20px;
 }
@@ -94,7 +100,8 @@ main {
 
 .headline-author-name>h3 {
     font-family: 'Arima', serif;
-    font-size: 22px;
+    /* CLAMP: Skaliert von 18px bis 22px */
+    font-size: clamp(1.125rem, 0.5vw + 1rem, 1.375rem);
     font-weight: 700;
     color: #43331b;
     line-height: 0.5;
@@ -103,6 +110,7 @@ main {
 .headline-author-name>p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    /* Bleibt konstant, da 16px überall gut lesbar ist */
     color: #5c482c;
     margin: 4px 0 0 0;
 }
@@ -116,7 +124,8 @@ main {
 
 .headline-info-box-bottom>p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
+    /* CLAMP: Skaliert von 16px bis 24px */
+    font-size: clamp(1rem, 1vw + 0.75rem, 1.5rem);
     font-weight: 400;
     color: rgba(84, 55, 13, 1);
     padding-top: 48px;
@@ -137,24 +146,28 @@ main {
 }
 
 .rain-graph-box>h2 {
-    font-family: 'Arima';
+    font-family: 'Arima', serif;
     font-weight: 500;
-    font-size: 32px;
+    /* CLAMP: Skaliert von 20px bis 32px */
+    font-size: clamp(1.25rem, 1.5vw + 0.8rem, 2rem);
     color: rgba(84, 55, 13, 1);
     text-align: center;
 }
 
 .rain-graph-box>img {
+    min-width: 320px;
     max-width: 640px;
     width: 100%;
     height: auto;
+    object-fit: cover;
     padding-top: 8px;
     border-radius: 53px;
 }
 
 .rain-graph-text>p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
+    /* CLAMP: Skaliert von 16px bis 24px */
+    font-size: clamp(1rem, 1vw + 0.75rem, 1.5rem);
     font-weight: 400;
     color: rgba(84, 55, 13, 1);
     margin-bottom: 80px;
@@ -186,9 +199,10 @@ main {
 
 .graph-box-left>h2,
 .graph-box-right>h2 {
-    font-family: 'Arima';
+    font-family: 'Arima', serif;
     font-weight: 500;
-    font-size: 32px;
+    /* CLAMP: Skaliert von 20px bis 32px */
+    font-size: clamp(1.25rem, 1.5vw + 0.8rem, 2rem);
     color: rgba(84, 55, 13, 1);
     text-align: center;
 }
@@ -197,7 +211,8 @@ main {
 .graph-box-right>p,
 .section-03-text {
     font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
+    /* CLAMP: Skaliert von 16px bis 24px */
+    font-size: clamp(1rem, 1vw + 0.75rem, 1.5rem);
     font-weight: 400;
     color: rgba(84, 55, 13, 1);
     text-align: left;
@@ -205,6 +220,8 @@ main {
 
 .graph-box-left>img,
 .graph-box-right>img {
+    max-width: 519px;
+    min-width: 320px;
     width: 100%;
     height: auto;
     border-radius: 53px;
@@ -218,7 +235,8 @@ main {
 
 .share-text>h3 {
     font-family: 'Arima', serif;
-    font-size: 24px;
+    /* CLAMP: Skaliert von 18px bis 24px */
+    font-size: clamp(1.125rem, 1vw + 0.8rem, 1.5rem);
     font-weight: 400;
     color: rgba(84, 55, 13, 1);
     text-align: center;
