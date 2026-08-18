@@ -333,8 +333,8 @@ main {
 }
 
 .share-text>h3 {
-    font-family: 'Arima', serif;
-    font-size: 24px;
+    font-family: 'Arima', serif;    
+    font-size: clamp(1.125rem, 1vw + 0.8rem, 1.5rem);
     font-weight: 400;
     color: rgba(84, 55, 13, 1);
     text-align: center;
