@@ -125,6 +125,397 @@ main {
 }
 
 /* ==== content wrapper ==== */
+.content-wrapper {
+    max-width: 1200px;
+
+    margin: 88px auto 126px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.highlights {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 88px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.headline-text {
+    max-width: 979px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    text-align: center;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.headline>img {
+    width: 48px;
+    height: 48px;
+}
+
+.headline>h1 {
+    font-family: "Arima";
+    font-style: bold;
+    font-weight: 700;
+    font-size: 52px;
+    color: rgba(78, 164, 135, 1);
+}
+
+.headline-text>p {
+    font-family: "Open Sans";
+    font-style: medium;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(84, 55, 13, 1);
+}
+
+/* ==== highlight-slider ==== */
+
+.highlight-slider {
+    height: 533px;
+    width: 100%;
+    /* 100% von -> [.content-wrapper {max-width: 1200px;}] -> Zeile 124 . */
+
+    position: relative;
+    /* Das ist der Rahmen für [.highlight-slider-wrapper] .  */
+
+    display: flex;
+    /* Das macht [.highlight-slider input] innerhalb von [.highlight-slider] flexibel . */
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 44px;
+    gap: 22px;
+
+    overflow: hidden;
+
+    border-top-right-radius: 100px;
+    cursor: pointer;
+}
+
+/* Radio-Buttons (Inaktiv: 28 x 28 px) */
+.highlight-slider input {
+    appearance: none;
+    z-index: 10;
+    /* Auf 10 erhöht, damit die Buttons über den Bildern liegen */
+
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Aktiver Radio-Button (Aktiv: 40 x 28 px) */
+.highlight-slider input:checked {
+    width: 40px;
+    background-color: rgba(241, 201, 83, 1);
+    border-radius: 14px;
+}
+
+.highlight-slider-wrapper {
+    width: 100%;
+    /* Von 400% auf 100% geändert */
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.highlight-slider-element {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    /* Überlagert alle Elemente an derselben Stelle */
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    /* Standardmäßig unsichtbar */
+    transition: opacity 0.6s ease-in-out;
+    /* Sanfte Einblend-Animation */
+    pointer-events: none;
+}
+
+.slider-img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-text {
+    max-width: 881px;
+
+    backdrop-filter: blur(16px);
+
+    position: absolute;
+    top: 54px;
+    left: 38px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    padding: 16px 24px;
+
+    box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.08),
+        1px 2px 4px rgba(255, 255, 255, 0.08),
+        3px 4px 9px rgba(255, 255, 255, 0.08),
+        6px 8px 15px rgba(255, 255, 255, 0.08),
+        9px 12px 24px rgba(255, 255, 255, 0.08);
+}
+
+.slider-text>h3 {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Open Sans";
+    font-style: bold;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.slider-text>p {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* Ersetzt die alten transform: translateX-Regeln für das Einblenden */
+.highlight-slider input[value="one"]:checked~.highlight-slider-wrapper .element-one,
+.highlight-slider input[value="two"]:checked~.highlight-slider-wrapper .element-two,
+.highlight-slider input[value="three"]:checked~.highlight-slider-wrapper .element-three,
+.highlight-slider input[value="four"]:checked~.highlight-slider-wrapper .element-four {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ==== FAQ ==== */
+
+.FAQ {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.faq-headline>img {
+    width: 48px;
+    height: 48px;
+}
+
+.faq-headline>h1 {
+    font-family: "Arima";
+    font-style: bold;
+    font-weight: 700;
+    font-size: 52px;
+    color: rgba(78, 164, 135, 1);
+}
+
+.faq-wrapper {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+details {
+    min-height: 61px;
+    border-radius: 12px;
+    background-color: rgba(241, 201, 83, 1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 16px 14px;
+}
+
+summary {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+details>p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    background-color: rgba(255, 255, 255, 1);
+
+    padding: 4px 10px;
+
+    border-radius: 5px;
+}
+
+/* === contact === */
+.Contact-form {
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #3d352e;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.contact-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.contact-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.contact-title-wrapper h2 {
+    font-family: 'Arima', serif;
+    font-size: 52px;
+    color: rgba(78, 164, 135, 1);
+    margin: 0;
+    font-weight: 600;
+}
+
+.contact-subtitle {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #3d352e;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 40px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 40px;
+}
+
+.input-group label {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: rgba(84, 55, 13, 1);
+}
+
+.input-group input,
+.input-group textarea {
+    border: none;
+    border-bottom: 1px solid rgba(84, 55, 13, 1);
+    background: transparent;
+    padding: 8px 0;
+    font-family: inherit;
+    font-size: 24px;
+    color: #3d352e;
+    outline: none;
+    resize: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-bottom-color: rgba(78, 164, 135, 1);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 36px;
+    font-size: 15px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    accent-color: rgba(78, 164, 135, 1);
+    cursor: pointer;
+}
+
+.checkbox-group a {
+    color: rgba(78, 164, 135, 1);
+    text-decoration: underline;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.button-wrapper button {
+    background: #ffffff;
+    border: 1px solid rgba(48, 48, 48, 0.5);
+    border-radius: 50px;
+    padding: 10px 44px;
+    font-family: 'Arima', cursive, serif;
+    font-size: 24px;
+    color: rgba(115, 115, 115, 1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/*zeichen abstand muss noch um 15% sein das "send"*/
+
+.button-wrapper button:hover {
+    border-color: rgba(78, 164, 135, 1);
+    color: rgba(78, 164, 135, 1);
+}
+
 
 /* ==== footer ==== */
 footer {
