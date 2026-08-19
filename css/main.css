@@ -207,7 +207,7 @@ main {
     border-top-right-radius: 100px;
     cursor: pointer;
 }
-
+ 
 /* Radio-Buttons (Inaktiv: 28 x 28 px) */
 .highlight-slider input {
     appearance: none;
@@ -340,6 +340,8 @@ main {
     font-size: 52px;
     color: rgba(78, 164, 135, 1);
 }
+
+/* === contact form === */
 
 /* ==== footer ==== */
 footer {
