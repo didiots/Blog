@@ -509,12 +509,11 @@ details>p {
     padding: 10px 44px;
     font-family: 'Arima', cursive, serif;
     font-size: 24px;
+    letter-spacing: 5%;
     color: rgba(115, 115, 115, 1);
     cursor: pointer;
     transition: all 0.2s ease;
 }
-
-/*zeichen abstand muss noch um 15% sein das "send"*/
 
 .button-wrapper button:hover {
     border-color: rgba(78, 164, 135, 1);
