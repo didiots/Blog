@@ -68,7 +68,7 @@ main {
 }
 
 .hero-left > h1 {
-  font-family: "Arima";
+  font-family: "Arima",serif;
   font-size: 64px;
   font-weight: 600;
   color: rgba(241, 201, 83, 1);
@@ -76,10 +76,11 @@ main {
 }
 
 .hero-left > p.sub-headline {
+  font-family: "Open Sans", sans-serif;
   font-size: 40px;
   font-weight: 500;
   color: rgba(78, 164, 135, 1);
-  margin: 0 0 16px 0;
+  margin: 0 0 8px 0;
 }
 
 .hero-left > p:not(.sub-headline) {
@@ -92,7 +93,7 @@ main {
 
 .hero-icon-bar {
   display: flex;
-  gap: 6px;
+  gap: 32px;
   padding-top: 32px;
   font-family: "Open Sans", sans-serif;
   color: rgba(84, 55, 13, 1);
