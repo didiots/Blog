@@ -490,6 +490,8 @@ details>p {
 .checkbox-group input[type="checkbox"] {
     accent-color: rgba(78, 164, 135, 1);
     cursor: pointer;
+    width: 18px;
+    height: auto;
 }
 
 .checkbox-group a {
