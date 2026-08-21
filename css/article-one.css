@@ -7,8 +7,6 @@ main {
     gap: 88px;
 }
 
-/* === section-01 === */
-
 .section-01 {
     max-width: 1440px;
     min-height: 120px;
@@ -120,20 +118,14 @@ h4 {
     color: rgba(84, 55, 13, 1);
 }
 
-
-/* === section-02 === */
-
 .section-02 {
     max-width: 1440px;
     min-height: 120px;
-
     padding-top: 80px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     gap: 64px;
 }
 
@@ -142,17 +134,14 @@ h4 {
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
-
     text-align: center;
 }
 
 .carousel {
     height: 440px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 40px;
 }
 
@@ -164,7 +153,6 @@ h4 {
 .carousel-card {
     z-index: 1;
     width: 200px;
-
     transform: perspective(250px) rotateY(10deg) translate(-50px);
     transform-origin: 50% 50%;
     transition: all 350ms ease-in-out;
@@ -172,7 +160,6 @@ h4 {
 
 .carousel-card:hover {
     z-index: 2;
-
     transform: perspective(250px) rotateY(0deg) translate(-65px) scaleX(1.2) scaleY(1.2);
 }
 
@@ -190,7 +177,6 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-
     color: rgba(61, 61, 61, 1);
 }
 
@@ -205,8 +191,6 @@ ol {
     padding-left: 40px;
 }
 
-/* === section-03 === */
-
 .section-03 {
     max-width: 1440px;
     min-height: 120px;
@@ -219,7 +203,6 @@ ol {
 .pro-tipps {
     width: 196px;
     height: 66px;
-
     border-radius: 10px;
     position: relative;
     right: 48px;
@@ -229,15 +212,12 @@ ol {
     justify-content: center;
     align-items: center;
     gap: 12px;
-
     background-color: rgba(78, 164, 135, 1);
 }
-
 
 .pro-tipps>img {
     width: 40px;
     height: auto;
-
     rotate: 14deg;
 }
 
@@ -246,20 +226,14 @@ ol {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-
     color: rgba(241, 201, 83, 1);
 }
 
 .text {
-
     border-radius: 30px;
-
     padding: 26px 16px 24px 16px;
-
     background-color: rgba(78, 164, 135, 0.2);
 }
-
-/* === section-04 === */
 
 .section-04 {
     margin: 80px 0;
@@ -267,7 +241,6 @@ ol {
 
 .share-text>h3 {
     font-family: 'Arima', serif;
-    /* CLAMP: Skaliert von 18px bis 24px */
     font-size: clamp(1.125rem, 1vw + 0.8rem, 1.5rem);
     font-weight: 400;
     color: rgba(84, 55, 13, 1);
