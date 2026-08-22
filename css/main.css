@@ -5,7 +5,7 @@ header {
 .navigator-bar {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: Clamp(20px, 6vw, 100px);
     max-width: 1440px;
     min-height: 120px;
     margin: 0 auto;
@@ -15,6 +15,7 @@ header {
 .blog-logo {
     height: 72px;
     width: 72px;
+    flex-shrink: 0;
 }
 
 .blog-logo img {
@@ -26,12 +27,12 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: Clamp(16px, 3vw, 40px);
 }
 
 .nav-links a {
     font-family: 'Arima', sans-serif;
-    font-size: 1.5rem;
+    font-size: Clamp(1.1rem, 1.8vw, 1.5rem);
     font-weight: 700;
     color: rgba(248, 245, 235, 1);
     transition: text-underline-offset 0.2s ease;
@@ -50,24 +51,9 @@ main {
 .hero-content-wrapper {
     position: relative;
     max-width: 1440px;
-    height: 547px;
+    min-height: Clamp(380px, 50vh, 547px);
     overflow: hidden;
     margin: 0 auto;
-}
-
-.hero-content-wrapper::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 647px;
-    height: 100%;
-
-    background-image: url("../assets/img/img-hero-yellow-hector.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
 }
 
 .hero-image {
@@ -75,47 +61,53 @@ main {
     width: 100%;
     max-width: 1440px;
     height: 515px;
-
     background-image: url("../assets/img/img-hero.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
 }
 
+.hero-yellow-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 647px;
+    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
+} 
+
 .hero-content {
     position: relative;
     z-index: 3;
-
     display: flex;
     flex-direction: column;
-    gap: 32px;
-
+    gap: Clamp(16px, 3vw, 32px);
     max-width: 345px;
-    height: 227px;
-
-    margin-left: 104px;
-    margin-top: 122px;
+    height: auto;
+    margin-left: Clamp(20px, 7vw, 104px);
+    margin-top: Clamp(40px, 8vw, 122px);
 }
 
 .hero-content>h1 {
     font-family: 'Arima', serif;
-    font-size: clamp(36px, 4vw, 60px);
+    font-size: Clamp(36px, 4vw, 60px);
     font-weight: 700;
+    color: rgba(84, 55, 13, 1);
 }
 
 .hero-content>p {
     font-family: 'Open Sans', sans-serif;
-    font-size: clamp(16px, 2vw, 28px);
-    font-weight: 300;
+    font-size: Clamp(16px, 2vw, 28px);
+    font-weight: 400;
+    color: rgba(84, 55, 13, 1);
 }
 
 .hero-badge {
     position: absolute;
     z-index: 4;
-
     top: 284px;
     left: 444px;
-
     width: 11vw;
     max-width: 160px;
     height: auto;
@@ -123,14 +115,12 @@ main {
 
 .content-wrapper {
     max-width: 1200px;
-
-    margin: 88px auto 126px;
-
+    margin: Clamp(40px, 8vw, 88px) auto Clamp(60px, 10vw, 126px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: Clamp(48px, 8vw, 120px);
 }
 
 .highlights {
@@ -138,18 +128,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 88px;
+    gap: Clamp(40px, 6vw, 88px);
     padding: 0 20px;
     margin: 0 auto;
 }
 
 .headline-text {
     max-width: 979px;
-
     display: flex;
     flex-direction: column;
     gap: 24px;
-
     text-align: center;
 }
 
@@ -161,28 +149,26 @@ main {
 }
 
 .headline>img {
-    width: 48px;
-    height: 48px;
+    width: Clamp(32px, 4vw, 48px);
+    height: Clamp(32px, 4vw, 48px);
 }
 
 .headline>h1 {
-    font-family: "Arima";
-    font-style: bold;
+    font-family: "Arima", serif;
     font-weight: 700;
-    font-size: 52px;
+    font-size: Clamp(32px, 5vw, 52px);
     color: rgba(78, 164, 135, 1);
 }
 
 .headline-text>p {
-    font-family: "Open Sans";
-    font-style: medium;
+    font-family: "Open Sans", sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: Clamp(16px, 2.5vw, 24px);
     color: rgba(84, 55, 13, 1);
 }
 
 .highlight-slider {
-    height: 533px;
+    min-height: Clamp(360px, 45vh, 533px);
     width: 100%;
     position: relative;
     display: flex;
@@ -191,7 +177,7 @@ main {
     padding-bottom: 44px;
     gap: 22px;
     overflow: hidden;
-    border-top-right-radius: 100px;
+    border-top-right-radius: Clamp(40px, 8vw, 100px);
     cursor: pointer;
 }
 
@@ -248,12 +234,13 @@ main {
     max-width: 881px;
     backdrop-filter: blur(16px);
     position: absolute;
-    top: 54px;
-    left: 38px;
+    top: Clamp(20px, 4vw, 54px);
+    left: Clamp(16px, 3vw, 38px);
+    right: Clamp(16px, 3vw, 38px);
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 16px 24px;
+    padding: Clamp(12px, 2vw, 16px) Clamp(16px, 2.5vw, 24px);
     box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.08),
         1px 2px 4px rgba(255, 255, 255, 0.08),
         3px 4px 9px rgba(255, 255, 255, 0.08),
@@ -263,18 +250,16 @@ main {
 
 .slider-text>h3 {
     color: rgba(255, 255, 255, 1);
-    font-family: "Open Sans";
-    font-style: bold;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
-    font-size: 44px;
+    font-size: Clamp(24px, 4vw, 44px);
 }
 
 .slider-text>p {
     color: rgba(255, 255, 255, 1);
-    font-family: "Open Sans";
-    font-style: normal;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: Clamp(15px, 2vw, 24px);
 }
 
 .highlight-slider input[value="one"]:checked~.highlight-slider-wrapper .element-one,
@@ -303,15 +288,14 @@ main {
 }
 
 .faq-headline>img {
-    width: 48px;
-    height: 48px;
+    width: Clamp(32px, 4vw, 48px);
+    height: Clamp(32px, 4vw, 48px);
 }
 
 .faq-headline>h1 {
-    font-family: "Arima";
-    font-style: bold;
+    font-family: "Arima", serif;
     font-weight: 700;
-    font-size: 52px;
+    font-size: Clamp(32px, 5vw, 52px);
     color: rgba(78, 164, 135, 1);
 }
 
@@ -331,28 +315,27 @@ details {
     flex-direction: column;
     justify-content: center;
     gap: 8px;
-
     padding: 16px 14px;
 }
 
 summary {
-    font-family: "Open Sans";
-    font-style: normal;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: Clamp(18px, 2.5vw, 24px);
+    cursor: pointer;
 }
 
 details>p {
-    font-family: "Open Sans";
-    font-style: normal;
+    font-family: "Open Sans", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: Clamp(14px, 1.8vw, 16px);
     background-color: rgba(255, 255, 255, 1);
-    padding: 4px 10px;
+    padding: 8px 12px;
     border-radius: 5px;
 }
 
 .Contact-form {
+    width: 100%;
     max-width: 1100px;
     padding: 0 20px;
     margin: 0 auto;
@@ -362,7 +345,7 @@ details>p {
 
 .contact-header {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: Clamp(24px, 5vw, 48px);
 }
 
 .contact-title-wrapper {
@@ -380,19 +363,19 @@ details>p {
 
 .contact-title-wrapper h2 {
     font-family: 'Arima', serif;
-    font-size: 52px;
+    font-size: Clamp(32px, 5vw, 52px);
     color: rgba(78, 164, 135, 1);
     margin: 0;
     font-weight: 600;
 }
 
 .contact-title-wrapper>img {
-    width: 48px;
-    height: 48px;
+    width: Clamp(32px, 4vw, 48px);
+    height: Clamp(32px, 4vw, 48px);
 }
 
 .contact-subtitle {
-    font-size: 24px;
+    font-size: Clamp(16px, 2.5vw, 24px);
     line-height: 1.5;
     color: #3d352e;
     margin: 0;
@@ -405,18 +388,19 @@ details>p {
 
 .form-row {
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: Clamp(16px, 3vw, 40px);
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    margin-bottom: 40px;
+    flex: auto;
+    margin-bottom: Clamp(20px, 4vw, 40px);
 }
 
 .input-group label {
-    font-size: 24px;
+    font-size: Clamp(16px, 2vw, 24px);
     font-weight: 400;
     margin-bottom: 12px;
     color: rgba(84, 55, 13, 1);
@@ -429,7 +413,7 @@ details>p {
     background: transparent;
     padding: 8px 0;
     font-family: inherit;
-    font-size: 24px;
+    font-size: Clamp(16px, 2vw, 24px);
     color: #3d352e;
     outline: none;
     resize: none;
@@ -446,7 +430,7 @@ details>p {
     justify-content: center;
     gap: 8px;
     margin-bottom: 36px;
-    font-size: 15px;
+    font-size: Clamp(13px, 1.5vw, 15px);
 }
 
 .checkbox-group input[type="checkbox"] {
@@ -470,10 +454,10 @@ details>p {
     background: #ffffff;
     border: 1px solid rgba(48, 48, 48, 0.5);
     border-radius: 50px;
-    padding: 10px 44px;
+    padding: 10px Clamp(24px, 4vw, 44px);
     font-family: 'Arima', cursive, serif;
-    font-size: 24px;
-    letter-spacing: 5%;
+    font-size: Clamp(18px, 2vw, 24px);
+    letter-spacing: 0.05em;
     color: rgba(115, 115, 115, 1);
     cursor: pointer;
     transition: all 0.2s ease;
@@ -492,17 +476,17 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: Clamp(20px, 5vw, 100px);
     max-width: 1440px;
-    height: 120px;
+    min-height: 120px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 20px 40px;
 }
 
 .footer-left {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: Clamp(20px, 5vw, 100px);
 }
 
 .footer-left-copyright {
@@ -520,7 +504,7 @@ footer {
 
 .footer-left-links {
     display: flex;
-    gap: 60px;
+    gap: Clamp(20px, 4vw, 60px);
 }
 
 .footer-left-links a {
