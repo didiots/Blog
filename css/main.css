@@ -75,7 +75,7 @@ main {
     object-fit: cover;
     z-index: 2;
     pointer-events: none;
-} 
+}
 
 .hero-content {
     position: relative;
@@ -314,7 +314,6 @@ details {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 8px;
     padding: 16px 14px;
 }
 
@@ -322,7 +321,30 @@ summary {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: Clamp(18px, 2.5vw, 24px);
+    color: rgba(84, 55, 13, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    pointer-events: none;
+}
+
+summary::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-right: 3px solid rgba(84, 55, 13, 1);
+    border-bottom: 3px solid rgba(84, 55, 13, 1);
+    transform: rotate(45deg);
+    transition: transform 0.5s ease;
     cursor: pointer;
+    margin-left: 16px;
+    pointer-events: auto;
+}
+
+details[open] summary::after {
+    transform: rotate(-135deg);
 }
 
 details>p {
@@ -330,6 +352,7 @@ details>p {
     font-weight: 500;
     font-size: Clamp(14px, 1.8vw, 16px);
     background-color: rgba(255, 255, 255, 1);
+    margin-top: 8px;
     padding: 8px 12px;
     border-radius: 5px;
 }
