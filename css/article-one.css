@@ -17,11 +17,12 @@ main {
 .section-01-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .section-01-left {
     max-width: 65%;
-
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -73,7 +74,8 @@ main {
 }
 
 .section-01-right {
-    max-width: 320px;
+    width: 320px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,10 +183,10 @@ li {
 }
 
 .list {
-    max-width: 1440px;
-    min-height: 120px;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 ol {
@@ -192,12 +194,10 @@ ol {
 }
 
 .section-03 {
-    max-width: 1440px;
-    min-height: 120px;
-    width: 1130px;
-    height: 260px;
-    margin: 0 auto;
-    margin-bottom: 80px;
+    width: 100%;
+    max-width: 1130px;
+    min-height: 260px;
+    margin: 0 auto 80px auto;
 }
 
 .pro-tipps {
