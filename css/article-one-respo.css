@@ -1,0 +1,56 @@
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .section-01 {
+        padding-top: 24px;
+    }
+
+    .section-01-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-meta {
+        flex-wrap: wrap;
+        padding: 24px 0;
+        gap: 16px;
+    }
+
+    .section-01-right {
+        max-width: 100%;
+    }
+
+    .section-04 {
+        margin: 40px 0 88px;
+    }
+
+    .arrow-icon {
+        display: none;
+    }
+
+    .arrow-icon-respon {
+        display: flex;
+    }
+
+    .arrow-button-wrapper {
+        padding-right: 42px;
+        margin-top: 10px;
+    }
+
+    .arrow-button-wrapper>label {
+        display: flex;
+        position: relative;
+        top: 40px;
+        margin: 0 auto;
+    }
+
+    .share-toggle:checked~.share-branch {
+        display: flex;
+        transform: translateX(-88px) translateY(33px) scale(2);
+    }
+}
