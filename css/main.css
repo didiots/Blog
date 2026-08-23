@@ -51,7 +51,7 @@ main {
 .hero-content-wrapper {
     position: relative;
     max-width: 1440px;
-    min-height: Clamp(380px, 50vh, 547px);
+    min-height: Clamp(380px, 50vh, 540px);
     overflow: hidden;
     margin: 0 auto;
 }
