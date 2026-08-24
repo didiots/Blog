@@ -109,8 +109,7 @@ main {
 .hero-badge {
     position: absolute;
     z-index: 4;
-    width: 11vw;
-    max-width: 160px;
+    width: 160px;
     height: auto;
     top: 63%; 
     left: 31%;
