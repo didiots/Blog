@@ -17,6 +17,7 @@ header {
     width: 72px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .blog-logo img {
