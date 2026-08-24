@@ -36,7 +36,6 @@
         align-items: flex-end;
         min-height: 134px;
         padding: 24px 15px 24px;
-        gap: 0px;
     }
 
     .footer-left {
@@ -47,7 +46,7 @@
 
     .footer-left-copyright p,
     .footer-left-links a {
-        font-size: clamp(0.85rem, 2.5vw, 1.0rem);
+        font-size: Clamp(0.85rem, 2.5vw, 1.0rem);
     }
 
     .footer-left-links {
@@ -59,12 +58,12 @@
     .footer-right {
         display: flex;
         align-items: center;
-        gap: clamp(8px, 2vw, 16px);
+        gap: Clamp(8px, 2vw, 16px);
     }
 
     .footer-social-logos {
         width: auto;
-        height: clamp(20px, 5vw, 24px);
+        height: Clamp(20px, 5vw, 24px);
     }
 
     .bottom-nav {
@@ -78,19 +77,11 @@
 
     .footer-container {
         min-height: 120px;
-        padding: 0 clamp(15px, 4vw, 40px) 24px;
-    }
-
-    .footer-left {
-        gap: 0px;
-    }
-
-    .footer-left-links {
-        gap: 0px;
+        padding: Clamp(15px, 4vw, 40px) 24px;
     }
 
     .footer-right {
-        gap: clamp(16px, 3vw, 28px);
+        gap: Clamp(16px, 3vw, 28px);
     }
 
     .footer-social-logos {
