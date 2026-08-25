@@ -17,7 +17,6 @@ main {
 .section-01-wrapper {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 40px;
 }
 
