@@ -53,7 +53,7 @@ main {
 .hero-content-wrapper {
     position: relative;
     max-width: 1440px;
-    min-height: Clamp(380px, 50vh, 540px);
+    height: 547px;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -72,10 +72,10 @@ main {
 .hero-yellow-shape {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0px;
+    min-width: 222px;
     width: 647px;
-    height: 540px;
-    object-fit: cover;
+    height: 540;
     z-index: 2;
     pointer-events: none;
 }
@@ -85,23 +85,22 @@ main {
     z-index: 3;
     display: flex;
     flex-direction: column;
-    gap: Clamp(16px, 3vw, 32px);
+    gap: 32px;
     max-width: 345px;
-    height: auto;
-    margin-left: Clamp(20px, 7vw, 104px);
-    margin-top: Clamp(40px, 8vw, 122px);
+    margin-top: 143px;
+    margin-left: 104px;
 }
 
 .hero-content>h1 {
     font-family: 'Arima', serif;
-    font-size: Clamp(36px, 4vw, 60px);
+    font-size: 60px;
     font-weight: 700;
     color: rgba(84, 55, 13, 1);
 }
 
 .hero-content>p {
     font-family: 'Open Sans', sans-serif;
-    font-size: Clamp(16px, 2vw, 28px);
+    font-size: 28px;
     font-weight: 400;
     color: rgba(84, 55, 13, 1);
 }
@@ -109,10 +108,10 @@ main {
 .hero-badge {
     position: absolute;
     z-index: 4;
-    width: 160px;
+    width: 132px;
     height: auto;
-    top: 63%; 
-    left: 31%;
+    top: 298px;
+    left: 458px;
 }
 
 .content-wrapper {
