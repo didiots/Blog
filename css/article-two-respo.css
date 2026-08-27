@@ -23,18 +23,7 @@
     padding: 0 15px;
   }
 
-  .navigator-bar {
-    flex-direction: column;
-    gap: 20px;
-    min-height: auto;
-    padding: 20px 15px;
-  }
-
-  .nav-links {
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  
 
   .landing-section {
     flex-direction: column;
@@ -180,30 +169,9 @@
     display: flex;
     transform: translateX(-93px) translateY(33px) scale(2);
   }
-
-  
 }
 
 @media screen and (max-width: 480px) {
-  .navigator-bar {
-    align-items: center;
-    justify-content: center;
-    padding: 16px 15px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .blog-logo {
-    margin: 0;
-  }
-
-  .blog-logo img {
-    display: block;
-    margin: 0 auto;
-  }
-
   
   body {
     padding-bottom: 76px;

@@ -1,21 +1,9 @@
-header {
-  background-color: rgba(78, 164, 135, 1);
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 40px;
 }
 
-.navigator-bar {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-  max-width: 1440px;
-  min-height: 120px;
-  margin: 0 auto;
-  padding: 20px 40px;
-}
-
-.blog-logo {
-  height: 72px;
-  width: 72px;
-}
 
 .nav-links {
   display: flex;
