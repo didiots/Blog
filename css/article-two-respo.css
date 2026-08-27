@@ -173,10 +173,7 @@
 
 @media screen and (max-width: 480px) {
   
-  body {
-    padding-bottom: 76px;
-  }
-
+ 
   .bottom-nav {
     display: flex;
     justify-content: center;
