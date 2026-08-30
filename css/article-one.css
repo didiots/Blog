@@ -122,7 +122,6 @@ h4 {
 .section-02 {
     max-width: 1440px;
     min-height: 120px;
-    padding-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
