@@ -42,6 +42,10 @@
         padding-top: 0px;
     }
 
+    .radio-container {
+        display: flex;
+    }
+
     .section-03 {
         margin: 0px;
     }
