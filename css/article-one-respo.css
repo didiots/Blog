@@ -7,7 +7,7 @@
     }
 
     .section-01 {
-        padding-top: 24px; 
+        padding-top: 24px;
     }
 
     .section-01-wrapper {
@@ -18,11 +18,11 @@
     }
 
     .section-01-left {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-}
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
 
     .article-meta {
         flex-wrap: wrap;
@@ -73,5 +73,13 @@
     .share-toggle:checked~.share-branch {
         display: flex;
         transform: translateX(-88px) translateY(33px) scale(2);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .article-meta {
+        flex-wrap: wrap;
+        padding: 12px 0;
+        gap: 16px;
     }
 }
