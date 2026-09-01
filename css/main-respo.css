@@ -147,3 +147,26 @@
         height: 32px;
     }
 }
+
+details > p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: Clamp(14px, 1.8vw, 16px);
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 0 12px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(18px);
+    transition: max-height 1.3s ease, opacity 0.9s ease, transform 1s ease, padding 0.8s ease, margin 0.8s ease;
+}
+
+details[open] > p {
+    margin-top: 8px;
+    padding: 8px 12px;
+    max-height: 240px;
+    opacity: 1;
+    transform: translateY(0);
+}
