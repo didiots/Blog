@@ -1,3 +1,17 @@
+@media screen and (min-width: 1040px) {
+  .icon-pro-tipps {
+    top: -68px;
+    left: -96px;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 990px) {
+  .icon-pro-tipps {
+    top: -68px;
+    left: -96px;
+  }
+}
+
 @media screen and (max-width: 1155px) {
   .landing-section {
     flex-direction: column;
@@ -22,8 +36,6 @@
     flex-direction: column;
     padding: 0 15px;
   }
-
-  
 
   .landing-section {
     flex-direction: column;
@@ -172,8 +184,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  
- 
   .bottom-nav {
     display: flex;
     justify-content: center;
@@ -204,5 +214,13 @@
     width: 40px;
     height: 40px;
     display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .icon-pro-tipps img {
+    width: 190px;
+    height: 66px;
+    object-fit: contain;
   }
 }
