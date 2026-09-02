@@ -40,49 +40,188 @@
 
     .section-02 {
         padding-top: 0px;
+        width: 100%;
+            gap: 0px;
     }
 
-    .radio-container {
+    .section-02 .carousel-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: none;
+        height: auto;
     }
 
-    .section-03 {
-        margin: 0px;
-    }
-
-    .pro-tipps {
-        right: -15px;
-        top: 0px;
-    }
-
-    .section-04 {
-        margin: 40px 0 88px;
-    }
-
-    .arrow-icon {
+    .carousel-wrapper>input[type="radio"] {
         display: none;
     }
 
-    .arrow-icon-respon {
+    .section-02 .carousel-wrapper .carousel {
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 380px;
+        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
     }
 
-    .arrow-button-wrapper {
-        padding-right: 42px;
-        margin-top: 10px;
+    .section-02 .carousel-wrapper .carousel .carousel-card {
+        flex: 0 0 220px;
+        width: 220px;
+        height: 300px;
+        margin: 0 -10px;
+        border-radius: 24px;
+        overflow: hidden;
+        transform: scale(0.75);
+        opacity: 1;
+        transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.4s ease;
+        z-index: 1;
     }
 
-    .arrow-button-wrapper>label {
-        display: flex;
-        position: relative;
-        top: 40px;
-        margin: 0 auto;
+    .section-02 .carousel-wrapper .carousel .carousel-card img {
+        width: 100%;
+        height: 100%;
+        border-radius: 24px;
+        object-fit: cover;
+        display: block;
     }
 
-    .share-toggle:checked~.share-branch {
+    .section-02 .carousel-wrapper .radio-container {
         display: flex;
-        transform: translateX(-88px) translateY(33px) scale(2);
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 12px;
     }
+
+    .section-02 .carousel-wrapper .radio-container .radio-dot {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: rgba(78, 164, 135, 0.3);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .section-02 .carousel-wrapper:has(#slide1:checked) .carousel {
+        transform: translateX(calc(50vw - 110px));
+    }
+
+    .section-02 .carousel-wrapper:has(#slide1:checked) .carousel .carousel-card:nth-child(1) {
+        transform: scale(1.15);
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .section-02 .carousel-wrapper:has(#slide1:checked) .radio-container .radio-dot:nth-child(1) {
+        width: 36px;
+        border-radius: 20px;
+        background-color: rgba(78, 164, 135, 1);
+    }
+
+    .section-02 .carousel-wrapper:has(#slide2:checked) .carousel {
+        transform: translateX(calc(50vw - 110px - 200px));
+    }
+
+    .section-02 .carousel-wrapper:has(#slide2:checked) .carousel .carousel-card:nth-child(2) {
+        transform: scale(1.15);
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .section-02 .carousel-wrapper:has(#slide2:checked) .radio-container .radio-dot:nth-child(2) {
+        width: 36px;
+        border-radius: 20px;
+        background-color: rgba(78, 164, 135, 1);
+    }
+
+    .section-02 .carousel-wrapper:has(#slide3:checked) .carousel {
+        transform: translateX(calc(50vw - 110px - 400px));
+    }
+
+    .section-02 .carousel-wrapper:has(#slide3:checked) .carousel .carousel-card:nth-child(3) {
+        transform: scale(1.15);
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .section-02 .carousel-wrapper:has(#slide3:checked) .radio-container .radio-dot:nth-child(3) {
+        width: 36px;
+        border-radius: 20px;
+        background-color: rgba(78, 164, 135, 1);
+    }
+
+    .section-02 .carousel-wrapper:has(#slide4:checked) .carousel {
+        transform: translateX(calc(50vw - 110px - 600px));
+    }
+
+    .section-02 .carousel-wrapper:has(#slide4:checked) .carousel .carousel-card:nth-child(4) {
+        transform: scale(1.15);
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .section-02 .carousel-wrapper:has(#slide4:checked) .radio-container .radio-dot:nth-child(4) {
+        width: 36px;
+        border-radius: 20px;
+        background-color: rgba(78, 164, 135, 1);
+    }
+
+    .section-02 .carousel-wrapper:has(#slide5:checked) .carousel {
+        transform: translateX(calc(50vw - 110px - 800px));
+    }
+
+    .section-02 .carousel-wrapper:has(#slide5:checked) .carousel .carousel-card:nth-child(5) {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+
+    .section-02 .carousel-wrapper:has(#slide5:checked) .radio-container .radio-dot:nth-child(5) {
+        width: 36px;
+        border-radius: 20px;
+        background-color: rgba(78, 164, 135, 1);
+    }
+}
+
+.section-03 {
+    margin: 0px;
+}
+
+.pro-tipps {
+    right: -15px;
+    top: 0px;
+}
+
+.section-04 {
+    margin: 40px 0 88px;
+}
+
+.arrow-icon {
+    display: none;
+}
+
+.arrow-icon-respon {
+    display: flex;
+}
+
+.arrow-button-wrapper {
+    padding-right: 42px;
+    margin-top: 10px;
+}
+
+.arrow-button-wrapper>label {
+    display: flex;
+    position: relative;
+    top: 40px;
+    margin: 0 auto;
+}
+
+.share-toggle:checked~.share-branch {
+    display: flex;
+    transform: translateX(-88px) translateY(33px) scale(2);
 }
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {

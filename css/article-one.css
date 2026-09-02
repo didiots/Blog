@@ -148,27 +148,12 @@ h4 {
     gap: 34px;
 }
 
+.carousel-wrapper>input[type="radio"] {
+    display: none;
+}
+
 .radio-container {
     display: none;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
-.radio-container>input {
-    appearance: none;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background-color: rgba(78, 164, 135, 0.3);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.radio-container>input:checked {
-    width: 40px;
-    background-color: rgba(78, 164, 135, 1);
-    border-radius: 50px;
 }
 
 .carousel {
