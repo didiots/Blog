@@ -293,7 +293,7 @@ main {
 }
 
 .highlight-slider {
-    min-height: Clamp(360px, 45vh, 533px);
+    min-height: Clamp(360px, 37vw, 533px);
     width: 100%;
     position: relative;
     display: flex;
