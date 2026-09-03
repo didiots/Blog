@@ -4,7 +4,7 @@ main {
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
-    gap: 88px;
+    gap: clamp(40px, 5vw, 88px);
 }
 
 .section-01 {
