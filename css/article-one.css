@@ -183,7 +183,7 @@ h4 {
 
 .carousel-card:hover {
     z-index: 2;
-    transform: perspective(250px) rotateY(0deg) translate(-50px) scaleX(1.2) scaleY(1.2);
+    transform: perspective(250px) rotateY(0deg) translate(0px) scaleX(1.2) scaleY(1.2);
 }
 
 .carousel-card:hover~.carousel-card {
@@ -191,7 +191,7 @@ h4 {
 }
 
 .carousel-card:has(~ .carousel-card:hover) {
-    transform: perspective(350px) rotateY(10deg) translate(-160px);
+    transform: perspective(350px) rotateY(10deg) translate(-60px);
 }
 
 p,
