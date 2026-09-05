@@ -257,65 +257,48 @@ main {
   margin-bottom: 88px;
 }
 
-.container-pro-tipps {
-  position: relative;
-  width: clamp(340px, 80vw, 1130px);
-  height: 260px;
-  margin-bottom: 0;
-  margin-inline: auto;
+.section-03 {
+  width: 100%;
+  max-width: 1130px;
+  min-height: 260px;
+  margin: 0 auto 80px auto;
+  padding: 0 20px;
 }
 
-.protipps {
+.pro-tipps {
+  width: 196px;
+  height: 66px;
+  border-radius: 10px;
+  position: relative;
+  right: 48px;
+  top: 20px;
+  rotate: -15deg;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  margin-top: 160px;
-  
-
-}
-
-.icon-pro-tipps {
-  position: absolute;
-  top: clamp(-120px, -8vw, -48px);
-  left: clamp(-96px, -8vw, -24px);
-  z-index: 2;
-  display: inline-block;
-  transform: rotate(-13.67deg);
-  transform-origin: center;
-  margin-left: 0;
-}
-
-.icon-pro-tipps img {
-  width: 220px;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  transition: width 0.2s ease, height 0.2s ease, transform 0.2s ease;
-  will-change: width, height, transform;
-}
-
-
-.text-section-ramen {
-  position: relative;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: rgba(78, 164, 135, 0.2);
-  border-radius: 30px;
-  padding: 24px 0 24px 0;
+  gap: 12px;
+  background-color: rgba(78, 164, 135, 1);
 }
 
-.text-section-button {
-  width: clamp(300px, 92%, 1050px);
-  font-family: "Open Sans", sans-serif;
-  font-size: clamp(16px, calc(16px + 8 * ((100vw - 320px) / 810)), 24px);
-  font-weight: 400;
-  color: rgba(61, 61, 61, 1);
+.pro-tipps>img {
+  width: 40px;
+  height: auto;
+  rotate: 14deg;
 }
-.text-section-ramen  a {
-  font-family:sans-serif;
-  font-weight: 700;
-  color: rgba(78, 164, 135, 1);
+
+.pro-tipps>p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(241, 201, 83, 1);
+}
+
+.text {
+  border-radius: 30px;
+  padding: 26px 16px 24px 51px;
+  background-color: rgba(78, 164, 135, 0.2);
+  font-family: "Open Sans", sans-serif;
 }
 
 .section-04 {

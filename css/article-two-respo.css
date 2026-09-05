@@ -1,17 +1,3 @@
-@media screen and (min-width: 1040px) {
-  .icon-pro-tipps {
-    top: -68px;
-    left: -96px;
-  }
-}
-
-@media screen and (min-width: 770px) and (max-width: 990px) {
-  .icon-pro-tipps {
-    top: -109px;
-    left: -50px;
-  }
-}
-
 @media screen and (max-width: 1155px) {
   .landing-section {
     flex-direction: column;
@@ -96,7 +82,7 @@
 
   .container > p,
   .custom-list,
-  .text-section-button {
+  .text {
     font-size: 16px;
   }
 
@@ -109,38 +95,13 @@
     margin-bottom: 40px;
   }
 
-  .protipps {
-    margin-top: 80px;
-  }
-
-  .container-pro-tipps {
-    width: 100%;
-    height: auto;
-  }
-
-  .icon-pro-tipps {
-    position: absolute;
-    top: -100px;
-    left: -1px;
-    display: inline-block;
-    transform: rotate(-1deg);
-    transform-origin: center;
+  .section-03 {
     margin: 0;
-    z-index: 2;
   }
 
-  .icon-pro-tipps img {
-    width: auto;
-    max-width: none;
-    display: block;
-  }
-
-  .text-section-ramen {
-    padding: 24px 20px;
-  }
-
-  .text-section-button {
-    width: 100%;
+  .pro-tipps {
+    right: -15px;
+    top: 0;
   }
 
   .section-04 {
@@ -217,10 +178,3 @@
   }
 }
 
-@media screen and (max-width: 320px) {
-  .icon-pro-tipps img {
-    width: 190px;
-    height: 66px;
-    object-fit: contain;
-  }
-}
