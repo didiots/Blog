@@ -296,8 +296,9 @@ main {
 
 .text {
   border-radius: 30px;
-  padding: 26px 16px 24px 16px;
+  padding: 26px 16px 24px 51px;
   background-color: rgba(78, 164, 135, 0.2);
+  font-family: "Open Sans", sans-serif;
 }
 
 .section-04 {
