@@ -4,27 +4,6 @@ main {
     padding: 20px 40px;
 }
 
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 40px;
-}
-
-.nav-links a {
-  font-family: "Arima", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: rgba(248, 245, 235, 1);
-  transition: text-underline-offset 0.2s ease;
-}
-
-.nav-links a:hover {
-  color: rgba(248, 245, 235, 1);
-  text-decoration: underline solid 1px rgba(248, 245, 235, 1);
-  text-underline-offset: 6px;
-}
-
 main {
   min-height: 100vh;
   max-width: 1440px;
