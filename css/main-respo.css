@@ -116,9 +116,9 @@
     }
 
     .hero-badge {
-        width: clamp(110px, calc(52.70px + 7.45vw), 160px);
-        top: clamp(240px, calc(189.57px + 6.56vw), 284px);
-        left: clamp(240px, calc(6.20px + 30.40vw), 444px);
+        width: Clamp(110px, calc(52.70px + 7.45vw), 160px);
+        top: Clamp(200px, calc(103.73px + 12.52vw), 284px);
+        left: Clamp(210px, calc(-58.19px + 34.87vw), 444px);
     }
 
     .bottom-nav {
@@ -180,5 +180,4 @@
         top: 284px;
         left: 444px;
     }
-} 
-
+}
