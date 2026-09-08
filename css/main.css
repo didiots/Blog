@@ -73,9 +73,8 @@ main {
     position: absolute;
     top: 0;
     left: 0px;
-    min-width: 222px;
-    width: 647px;
-    height: 540px;
+    width: clamp(222px, 45vw, 647px);
+    height: clamp(185px, 37.5vw, 540px);
     z-index: 2;
     pointer-events: none;
 }
