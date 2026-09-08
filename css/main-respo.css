@@ -21,8 +21,10 @@
 
     .hero-badge {
         position: absolute;
+        width: clamp(132px, calc(215.65px - 17.39vw), 160px);
+        height: auto;
         top: 121px;
-        left: 71px;
+        left: clamp(67px, calc(78.95px - 2.48vw), 71px);
     }
 
     .checkbox-group {
@@ -49,7 +51,7 @@
 
     .footer-left-copyright p,
     .footer-left-links a {
-        font-size: Clamp(0.85rem, 2.5vw, 1.0rem);
+        font-size: clamp(0.85rem, 2.5vw, 1.0rem);
     }
 
     .footer-left-links {
@@ -61,12 +63,12 @@
     .footer-right {
         display: flex;
         align-items: center;
-        gap: Clamp(8px, 2vw, 16px);
+        gap: clamp(8px, 2vw, 16px);
     }
 
     .footer-social-logos {
         width: auto;
-        height: Clamp(20px, 5vw, 24px);
+        height: clamp(20px, 5vw, 24px);
     }
 
     .bottom-nav {
@@ -74,16 +76,15 @@
         bottom: 0;
         display: flex;
     }
-
 }
 
 @media screen and (min-width: 481px) {
 
     .hero-badge {
-        width: Clamp(132px, 20vw, 160px);
+        width: clamp(110px, calc(168.74px - 7.64vw), 132px);
         height: auto;
-        top: Clamp(121px, 25vw, 250px);
-        left: Clamp(67px, 18vw, 200px);
+        top: clamp(121px, calc(-77.75px + 41.32vw), 240px);
+        left: clamp(67px, calc(-221.93px + 60.07vw), 240px);
     }
 
     .contact-subtitle {
@@ -92,11 +93,11 @@
 
     .footer-container {
         min-height: 120px;
-        padding: Clamp(15px, 4vw, 40px) 24px;
+        padding: clamp(15px, 4vw, 40px) 24px;
     }
 
     .footer-right {
-        gap: Clamp(16px, 3vw, 28px);
+        gap: clamp(16px, 3vw, 28px);
     }
 
     .footer-social-logos {
@@ -115,9 +116,9 @@
     }
 
     .hero-badge {
-        width: Clamp(110px, 13vw, 160px);
-        top: Clamp(240px, 32vw, 300px);
-        left: Clamp(240px, 30vw, 440px);
+        width: clamp(110px, calc(52.70px + 7.45vw), 160px);
+        top: clamp(240px, calc(189.57px + 6.56vw), 284px);
+        left: clamp(240px, calc(6.20px + 30.40vw), 444px);
     }
 
     .bottom-nav {
@@ -126,6 +127,12 @@
 
     .nav-links {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .hero-content {
+        display: none;
     }
 }
 
@@ -169,11 +176,9 @@
 
 @media screen and (min-width: 1440px) {
     .hero-badge {
-        position: absolute;
-        z-index: 6;
         width: 160px;
-        height: auto;
-        top: 55.15%;
-        left: 30.83%;
+        top: 284px;
+        left: 444px;
     }
-}
+} 
+
