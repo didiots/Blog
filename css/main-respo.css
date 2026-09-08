@@ -19,107 +19,10 @@
         display: none;
     }
 
-    .hero-content-wrapper {
-        height: 515px;
-        max-width: 1440px;
-        margin: 0 auto;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .hero-image {
-        height: 515px;
-        width: 100%;
-        max-width: 1440px;
-        margin: 0 auto;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-    }
-
-    .hero-content {
-        position: absolute;
-        z-index: 5;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        max-width: 345px;
-        top: 143px;
-        left: 40%;
-        transform: translateX(-50%);
-        opacity: 0;
-
-        animation:
-            fadeInContent 0.6s ease-out 0.2s forwards,
-            fadeOutContent 0.25s ease-in 3.25s forwards;
-    }
-
-    @keyframes fadeInContent {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fadeOutContent {
-        0% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 0;
-        }
-    }
-
-    .hero-content>h1 {
-        font-size: 40px;
-    }
-
-    .hero-content>p {
-        font-size: 18px;
-    }
-
-    .shape-1 {
-        width: 100%;
-        height: 515px;
-        animation:
-            slideOutLeft1 0.25s cubic-bezier(0.7, 0, 0.84, 1) 3.25s forwards;
-    }
-
-    .shape-2 {
-        width: 100%;
-        height: 515px;
-        opacity: 0;
-        animation:
-            fadeAndSlideShape2 1.0s cubic-bezier(0.65, 0, 0.35, 1) 3.5s both;
-    }
-
-    .shape-3 {
-        width: 222px;
-        height: 299px;
-        position: absolute;
-        top: -58px;
-        left: -18px;
-        object-fit: contain;
-        z-index: 2;
-        animation: fadeInShape3 1.0s ease-out 3.6s both;
-    }
-
     .hero-badge {
-        width: 132px;
-        height: 132px;
         position: absolute;
         top: 121px;
-        left: 67px;
-        z-index: 6;
-        opacity: 0;
-
-        animation:
-            popBadgeUp 0.6s cubic-bezier(0.25, 1, 0.5, 1) 3.9s forwards,
-            rotateBadge 12s linear 2.9s infinite;
+        left: 71px;
     }
 
     .checkbox-group {
@@ -175,12 +78,6 @@
 }
 
 @media screen and (min-width: 481px) {
-    .shape-3 {
-        width: Clamp(222px, 40vw, 450px);
-        height: auto;
-        top: Clamp(-58px, -4vw, 0px);
-        left: Clamp(-18px, -2vw, 0px);
-    }
 
     .hero-badge {
         width: Clamp(132px, 20vw, 160px);
@@ -217,46 +114,10 @@
         justify-content: flex-start;
     }
 
-    .hero-content-wrapper {
-        height: 547px;
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-
-    .hero-image {
-        height: 515px;
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-
-    .shape-1 {
-        display: block;
-        width: 100%;
-        height: 520px;
-        animation: slideOutLeft1 1.2s cubic-bezier(0.65, 0, 0.35, 1) 1.4s forwards;
-    }
-
-    .shape-2 {
-        display: block;
-        width: 100%;
-        height: 515px;
-        animation: fadeAndSlideShape2 1.1s cubic-bezier(0.65, 0, 0.35, 1) 1.7s forwards;
-    }
-
-    .shape-3 {
-        width: Clamp(380px, 45vw, 647px);
-        height: auto;
-        top: 0;
-        left: 0;
-    }
-
     .hero-badge {
         width: Clamp(110px, 13vw, 160px);
         top: Clamp(240px, 32vw, 300px);
         left: Clamp(240px, 30vw, 440px);
-        animation:
-            popBadgeUp 1.0s cubic-bezier(0.25, 1, 0.5, 1) 2.3s forwards,
-            rotateBadge 12s linear 2.9s infinite;
     }
 
     .bottom-nav {
@@ -269,21 +130,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .hero-content {
-        position: absolute;
-        z-index: 5;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        max-width: 345px;
-        width: auto;
-        top: 91px;
-        left: 50%;
-        opacity: 0;
-        animation:
-            fadeInContent 0.6s ease-out 0.2s forwards,
-            moveContentLeft 1.0s cubic-bezier(0.65, 0, 0.35, 1) 1.7s forwards;
-    }
 
     .footer-container {
         justify-content: space-between;
@@ -322,14 +168,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .hero-content {
-        gap: 32px;
-        top: 143px;
-        animation:
-            fadeInContent 0.6s ease-out 0.2s forwards,
-            moveContentLeft 1.0s cubic-bezier(0.65, 0, 0.35, 1) 1.7s forwards;
-    }
-
     .hero-badge {
         position: absolute;
         z-index: 6;
@@ -337,31 +175,5 @@
         height: auto;
         top: 55.15%;
         left: 30.83%;
-        animation:
-            popBadgeUp 0.6s cubic-bezier(0.25, 1, 0.5, 1) 2.3s forwards,
-            rotateBadge 12s linear 2.9s infinite;
     }
-}
-
-details>p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 500;
-    font-size: Clamp(14px, 1.8vw, 16px);
-    background-color: rgba(255, 255, 255, 1);
-    margin: 0;
-    padding: 0 12px;
-    border-radius: 5px;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(18px);
-    transition: max-height 1.3s ease, opacity 0.9s ease, transform 1s ease, padding 0.8s ease, margin 0.8s ease;
-}
-
-details[open]>p {
-    margin-top: 8px;
-    padding: 8px 12px;
-    max-height: 240px;
-    opacity: 1;
-    transform: translateY(0);
 }
